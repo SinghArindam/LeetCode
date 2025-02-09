@@ -1,13 +1,3 @@
-# class NumberContainers:
-
-#     def __init__(self):
-        
-
-#     def change(self, index: int, number: int) -> None:
-        
-
-#     def find(self, number: int) -> int:
-#         import heapq
 from collections import defaultdict
 
 class NumberContainers:
