@@ -1,0 +1,686 @@
+[
+  {
+    "relative_path": ".\\automate_notes.py",
+    "size": {
+      "bytes": 11295,
+      "kb": 11.03,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T18:58:59.178673",
+    "created": "2025-07-05T16:35:04.392244",
+    "extension": ".py"
+  },
+  {
+    "relative_path": ".\\automate_notes_v2.py",
+    "size": {
+      "bytes": 12994,
+      "kb": 12.69,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:07:04.317166",
+    "created": "2025-07-05T19:06:43.160715",
+    "extension": ".py"
+  },
+  {
+    "relative_path": ".\\file_structure.json",
+    "size": {
+      "bytes": 18426,
+      "kb": 17.99,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:47:03.383478",
+    "created": "2025-07-05T19:27:57.640460",
+    "extension": ".json"
+  },
+  {
+    "relative_path": ".\\file_traverse_v1.0.py",
+    "size": {
+      "bytes": 3024,
+      "kb": 2.95,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:23:51.485207",
+    "created": "2025-07-05T19:15:51.957631",
+    "extension": ".py"
+  },
+  {
+    "relative_path": ".\\file_traverse_v1.1.py",
+    "size": {
+      "bytes": 3952,
+      "kb": 3.86,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:26:57.975870",
+    "created": "2025-07-05T19:25:43.811070",
+    "extension": ".py"
+  },
+  {
+    "relative_path": ".\\file_traverse_v1.2.py",
+    "size": {
+      "bytes": 17399,
+      "kb": 16.99,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:48:46.315158",
+    "created": "2025-07-05T19:29:22.694724",
+    "extension": ".py"
+  },
+  {
+    "relative_path": ".\\README.md",
+    "size": {
+      "bytes": 13,
+      "kb": 0.01,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-01-07T20:28:52.720100",
+    "created": "2025-01-07T20:28:52.719126",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1160-letter-tile-possibilities\\letter-tile-possibilities.cpp",
+    "size": {
+      "bytes": 898,
+      "kb": 0.88,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.828376",
+    "created": "2025-02-25T13:16:16.828376",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\1160-letter-tile-possibilities\\README.md",
+    "size": {
+      "bytes": 1321,
+      "kb": 1.29,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.815200",
+    "created": "2025-02-25T13:16:16.811170",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1364-tuple-with-same-product\\README.md",
+    "size": {
+      "bytes": 1577,
+      "kb": 1.54,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.828376",
+    "created": "2025-02-25T13:16:16.828376",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1364-tuple-with-same-product\\tuple-with-same-product.py",
+    "size": {
+      "bytes": 750,
+      "kb": 0.73,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.828376",
+    "created": "2025-02-25T13:16:16.828376",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\1387-find-elements-in-a-contaminated-binary-tree\\find-elements-in-a-contaminated-binary-tree.cpp",
+    "size": {
+      "bytes": 939,
+      "kb": 0.92,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.898603",
+    "created": "2025-02-25T13:16:16.898603",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\1387-find-elements-in-a-contaminated-binary-tree\\README.md",
+    "size": {
+      "bytes": 3431,
+      "kb": 3.35,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.882463",
+    "created": "2025-02-25T13:16:16.857530",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1477-product-of-the-last-k-numbers\\product-of-the-last-k-numbers.cpp",
+    "size": {
+      "bytes": 696,
+      "kb": 0.68,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.952865",
+    "created": "2025-02-25T13:16:16.952865",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\1477-product-of-the-last-k-numbers\\README.md",
+    "size": {
+      "bytes": 2802,
+      "kb": 2.74,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.937161",
+    "created": "2025-02-25T13:16:16.937161",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n\\README.md",
+    "size": {
+      "bytes": 2417,
+      "kb": 2.36,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.969633",
+    "created": "2025-02-25T13:16:16.969633",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n\\the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.cpp",
+    "size": {
+      "bytes": 696,
+      "kb": 0.68,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:16.986021",
+    "created": "2025-02-25T13:16:16.986021",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\1631-number-of-sub-arrays-with-odd-sum\\README.md",
+    "size": {
+      "bytes": 1402,
+      "kb": 1.37,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.002873",
+    "created": "2025-02-25T13:16:17.002873",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1819-construct-the-lexicographically-largest-valid-sequence\\construct-the-lexicographically-largest-valid-sequence.cpp",
+    "size": {
+      "bytes": 1188,
+      "kb": 1.16,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.069254",
+    "created": "2025-02-25T13:16:17.069254",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\1819-construct-the-lexicographically-largest-valid-sequence\\README.md",
+    "size": {
+      "bytes": 2117,
+      "kb": 2.07,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.038130",
+    "created": "2025-02-25T13:16:17.038130",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1878-check-if-array-is-sorted-and-rotated\\README.md",
+    "size": {
+      "bytes": 2570,
+      "kb": 2.51,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.071392",
+    "created": "2025-02-25T13:16:17.069254",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1915-check-if-one-string-swap-can-make-strings-equal\\check-if-one-string-swap-can-make-strings-equal.py",
+    "size": {
+      "bytes": 536,
+      "kb": 0.52,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.073934",
+    "created": "2025-02-25T13:16:17.073389",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\1915-check-if-one-string-swap-can-make-strings-equal\\README.md",
+    "size": {
+      "bytes": 1848,
+      "kb": 1.8,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.072391",
+    "created": "2025-02-25T13:16:17.072391",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\1927-maximum-ascending-subarray-sum\\maximum-ascending-subarray-sum.py",
+    "size": {
+      "bytes": 611,
+      "kb": 0.6,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.073934",
+    "created": "2025-02-25T13:16:17.073934",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\1927-maximum-ascending-subarray-sum\\README.md",
+    "size": {
+      "bytes": 1740,
+      "kb": 1.7,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.073934",
+    "created": "2025-02-25T13:16:17.073934",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2021-remove-all-occurrences-of-a-substring\\README.md",
+    "size": {
+      "bytes": 2523,
+      "kb": 2.46,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.090623",
+    "created": "2025-02-25T13:16:17.090623",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2021-remove-all-occurrences-of-a-substring\\remove-all-occurrences-of-a-substring.cpp",
+    "size": {
+      "bytes": 501,
+      "kb": 0.49,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.107601",
+    "created": "2025-02-25T13:16:17.107601",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\2107-find-unique-binary-string\\find-unique-binary-string.cpp",
+    "size": {
+      "bytes": 347,
+      "kb": 0.34,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.140487",
+    "created": "2025-02-25T13:16:17.140487",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\2107-find-unique-binary-string\\README.md",
+    "size": {
+      "bytes": 1877,
+      "kb": 1.83,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.123476",
+    "created": "2025-02-25T13:16:17.123476",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2434-design-a-number-container-system\\design-a-number-container-system.py",
+    "size": {
+      "bytes": 894,
+      "kb": 0.87,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.164697",
+    "created": "2025-02-25T13:16:17.140487",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\2434-design-a-number-container-system\\README.md",
+    "size": {
+      "bytes": 2655,
+      "kb": 2.59,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.140487",
+    "created": "2025-02-25T13:16:17.140487",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2448-count-number-of-bad-pairs\\count-number-of-bad-pairs.py",
+    "size": {
+      "bytes": 507,
+      "kb": 0.5,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.168689",
+    "created": "2025-02-25T13:16:17.168689",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\2448-count-number-of-bad-pairs\\README.md",
+    "size": {
+      "bytes": 1449,
+      "kb": 1.42,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.168689",
+    "created": "2025-02-25T13:16:17.168689",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2456-construct-smallest-number-from-di-string\\construct-smallest-number-from-di-string.cpp",
+    "size": {
+      "bytes": 669,
+      "kb": 0.65,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.214784",
+    "created": "2025-02-25T13:16:17.214784",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\2456-construct-smallest-number-from-di-string\\README.md",
+    "size": {
+      "bytes": 2424,
+      "kb": 2.37,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.204470",
+    "created": "2025-02-25T13:16:17.200125",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\2473-max-sum-of-a-pair-with-equal-sum-of-digits\\max-sum-of-a-pair-with-equal-sum-of-digits.cpp",
+    "size": {
+      "bytes": 1326,
+      "kb": 1.29,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.243705",
+    "created": "2025-02-25T13:16:17.243705",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\2473-max-sum-of-a-pair-with-equal-sum-of-digits\\README.md",
+    "size": {
+      "bytes": 1692,
+      "kb": 1.65,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.234539",
+    "created": "2025-02-25T13:16:17.234539",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\27-remove-element\\README.md",
+    "size": {
+      "bytes": 2833,
+      "kb": 2.77,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T16:31:18.316422",
+    "created": "2025-07-05T16:31:18.316422",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\27-remove-element\\remove-element.py",
+    "size": {
+      "bytes": 262,
+      "kb": 0.26,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T16:31:18.333193",
+    "created": "2025-07-05T16:31:18.333193",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\2802-find-the-punishment-number-of-an-integer\\find-the-punishment-number-of-an-integer.cpp",
+    "size": {
+      "bytes": 803,
+      "kb": 0.78,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.308817",
+    "created": "2025-02-25T13:16:17.308817",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\2802-find-the-punishment-number-of-an-integer\\README.md",
+    "size": {
+      "bytes": 1963,
+      "kb": 1.92,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.296061",
+    "created": "2025-02-25T13:16:17.273849",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3309-count-prefix-and-suffix-pairs-i\\count-prefix-and-suffix-pairs-i.cpp",
+    "size": {
+      "bytes": 586,
+      "kb": 0.57,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-01-18T16:56:47.212878",
+    "created": "2025-01-18T16:56:47.212878",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\3309-count-prefix-and-suffix-pairs-i\\README.md",
+    "size": {
+      "bytes": 3065,
+      "kb": 2.99,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-01-18T16:56:47.206209",
+    "created": "2025-01-18T16:56:47.206209",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3332-minimum-operations-to-exceed-threshold-value-ii\\minimum-operations-to-exceed-threshold-value-ii.cpp",
+    "size": {
+      "bytes": 740,
+      "kb": 0.72,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.334104",
+    "created": "2025-02-25T13:16:17.334104",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\3332-minimum-operations-to-exceed-threshold-value-ii\\README.md",
+    "size": {
+      "bytes": 2686,
+      "kb": 2.62,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.318780",
+    "created": "2025-02-25T13:16:17.318780",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3372-longest-strictly-increasing-or-strictly-decreasing-subarray\\longest-strictly-increasing-or-strictly-decreasing-subarray.py",
+    "size": {
+      "bytes": 893,
+      "kb": 0.87,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.337593",
+    "created": "2025-02-25T13:16:17.334104",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\3372-longest-strictly-increasing-or-strictly-decreasing-subarray\\README.md",
+    "size": {
+      "bytes": 2835,
+      "kb": 2.77,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.334104",
+    "created": "2025-02-25T13:16:17.334104",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3429-special-array-i\\README.md",
+    "size": {
+      "bytes": 1951,
+      "kb": 1.91,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.338593",
+    "created": "2025-02-25T13:16:17.338593",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3429-special-array-i\\special-array-i.py",
+    "size": {
+      "bytes": 164,
+      "kb": 0.16,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.339592",
+    "created": "2025-02-25T13:16:17.338593",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\3434-find-the-number-of-distinct-colors-among-the-balls\\find-the-number-of-distinct-colors-among-the-balls.py",
+    "size": {
+      "bytes": 1218,
+      "kb": 1.19,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.340042",
+    "created": "2025-02-25T13:16:17.340042",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\3434-find-the-number-of-distinct-colors-among-the-balls\\README.md",
+    "size": {
+      "bytes": 3117,
+      "kb": 3.04,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.340042",
+    "created": "2025-02-25T13:16:17.340042",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3447-clear-digits\\clear-digits.cpp",
+    "size": {
+      "bytes": 402,
+      "kb": 0.39,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.347944",
+    "created": "2025-02-25T13:16:17.347944",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\3447-clear-digits\\README.md",
+    "size": {
+      "bytes": 1751,
+      "kb": 1.71,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-02-25T13:16:17.347944",
+    "created": "2025-02-25T13:16:17.340042",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3483-alternating-groups-ii\\alternating-groups-ii.cpp",
+    "size": {
+      "bytes": 1210,
+      "kb": 1.18,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-05-03T15:34:03.244871",
+    "created": "2025-05-03T15:34:03.244871",
+    "extension": ".cpp"
+  },
+  {
+    "relative_path": "submissions\\3483-alternating-groups-ii\\README.md",
+    "size": {
+      "bytes": 5265,
+      "kb": 5.14,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-05-03T15:34:03.228635",
+    "created": "2025-05-03T15:34:03.228635",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\88-merge-sorted-array\\merge-sorted-array.py",
+    "size": {
+      "bytes": 289,
+      "kb": 0.28,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T16:31:18.366415",
+    "created": "2025-07-05T16:31:18.366415",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\88-merge-sorted-array\\README.md",
+    "size": {
+      "bytes": 2577,
+      "kb": 2.52,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T16:31:18.349918",
+    "created": "2025-07-05T16:31:18.349918",
+    "extension": ".md"
+  }
+]
