@@ -221,48 +221,48 @@ def process_submission_folders(submissions_base_path="submissions"):
 if __name__ == "__main__":
     # Create dummy submission folders and files for testing
     # In a real scenario, these would be your actual LeetCode submission folders
-    os.makedirs("submissions/1-TwoSum", exist_ok=True)
-    with open("submissions/1-TwoSum/solution.py", "w") as f:
-        f.write("""
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # Hash map approach
-        num_map = {}
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in num_map:
-                return [num_map[complement], i]
-            num_map[num] = i
-        return []
-""")
+#     os.makedirs("submissions/1-TwoSum", exist_ok=True)
+#     with open("submissions/1-TwoSum/solution.py", "w") as f:
+#         f.write("""
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         # Hash map approach
+#         num_map = {}
+#         for i, num in enumerate(nums):
+#             complement = target - num
+#             if complement in num_map:
+#                 return [num_map[complement], i]
+#             num_map[num] = i
+#         return []
+# """)
 
-    os.makedirs("submissions/2-AddTwoNumbers", exist_ok=True)
-    with open("submissions/2-AddTwoNumbers/solution.py", "w") as f:
-        f.write("""
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        dummyHead = ListNode(0)
-        curr = dummyHead
-        carry = 0
-        while l1 is not None or l2 is not None or carry != 0:
-            val1 = l1.val if l1 is not None else 0
-            val2 = l2.val if l2 is not None else 0
+#     os.makedirs("submissions/2-AddTwoNumbers", exist_ok=True)
+#     with open("submissions/2-AddTwoNumbers/solution.py", "w") as f:
+#         f.write("""
+# # Definition for singly-linked list.
+# # class ListNode:
+# #     def __init__(self, val=0, next=None):
+# #         self.val = val
+# #         self.next = next
+# class Solution:
+#     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+#         dummyHead = ListNode(0)
+#         curr = dummyHead
+#         carry = 0
+#         while l1 is not None or l2 is not None or carry != 0:
+#             val1 = l1.val if l1 is not None else 0
+#             val2 = l2.val if l2 is not None else 0
 
-            sum_vals = val1 + val2 + carry
-            carry = sum_vals // 10
-            new_node = ListNode(sum_vals % 10)
-            curr.next = new_node
-            curr = new_node
+#             sum_vals = val1 + val2 + carry
+#             carry = sum_vals // 10
+#             new_node = ListNode(sum_vals % 10)
+#             curr.next = new_node
+#             curr = new_node
 
-            l1 = l1.next if l1 is not None else None
-            l2 = l2.next if l2 is not None else None
-        return dummyHead.next
-""")
+#             l1 = l1.next if l1 is not None else None
+#             l2 = l2.next if l2 is not None else None
+#         return dummyHead.next
+# """)
     # Ensure the Notes directories exist
     os.makedirs("Notes/Short_Notes", exist_ok=True)
     os.makedirs("Notes/Atomic_Notes", exist_ok=True)
