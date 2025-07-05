@@ -14,53 +14,17 @@
   {
     "relative_path": ".\\automate_notes_v2.py",
     "size": {
-      "bytes": 12994,
-      "kb": 12.69,
-      "mb": 0.01,
+      "bytes": 16491,
+      "kb": 16.1,
+      "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-07-05T19:07:04.317166",
+    "modified": "2025-07-05T19:58:37.199030",
     "created": "2025-07-05T19:06:43.160715",
     "extension": ".py"
   },
   {
-    "relative_path": ".\\file_structure.json",
-    "size": {
-      "bytes": 18426,
-      "kb": 17.99,
-      "mb": 0.02,
-      "gb": 0.0
-    },
-    "modified": "2025-07-05T19:47:03.383478",
-    "created": "2025-07-05T19:27:57.640460",
-    "extension": ".json"
-  },
-  {
-    "relative_path": ".\\file_traverse_v1.0.py",
-    "size": {
-      "bytes": 3024,
-      "kb": 2.95,
-      "mb": 0.0,
-      "gb": 0.0
-    },
-    "modified": "2025-07-05T19:23:51.485207",
-    "created": "2025-07-05T19:15:51.957631",
-    "extension": ".py"
-  },
-  {
-    "relative_path": ".\\file_traverse_v1.1.py",
-    "size": {
-      "bytes": 3952,
-      "kb": 3.86,
-      "mb": 0.0,
-      "gb": 0.0
-    },
-    "modified": "2025-07-05T19:26:57.975870",
-    "created": "2025-07-05T19:25:43.811070",
-    "extension": ".py"
-  },
-  {
-    "relative_path": ".\\file_traverse_v1.2.py",
+    "relative_path": ".\\filetreegen_v1.2.py",
     "size": {
       "bytes": 17399,
       "kb": 16.99,
@@ -72,15 +36,903 @@
     "extension": ".py"
   },
   {
+    "relative_path": ".\\file_structure.json",
+    "size": {
+      "bytes": 18426,
+      "kb": 17.99,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:48:50.621558",
+    "created": "2025-07-05T19:27:57.640460",
+    "extension": ".json"
+  },
+  {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 13,
-      "kb": 0.01,
+      "bytes": 6622,
+      "kb": 6.47,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:29:45.873290",
+    "created": "2025-01-07T20:28:52.719126",
+    "extension": ".md"
+  },
+  {
+    "relative_path": ".\\TREE_FILE.txt",
+    "size": {
+      "bytes": 6694,
+      "kb": 6.54,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T19:48:50.637177",
+    "created": "2025-07-05T19:48:50.637177",
+    "extension": ".txt"
+  },
+  {
+    "relative_path": "Notes\\1160-letter-tile-possibilities_Notes.md",
+    "size": {
+      "bytes": 24080,
+      "kb": 23.52,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:03:13.737513",
+    "created": "2025-07-05T20:03:13.440597",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1364-tuple-with-same-product_Notes.md",
+    "size": {
+      "bytes": 18745,
+      "kb": 18.31,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:04:26.379531",
+    "created": "2025-07-05T20:04:26.363904",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1387-find-elements-in-a-contaminated-binary-tree_Notes.md",
+    "size": {
+      "bytes": 21885,
+      "kb": 21.37,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:05:44.777473",
+    "created": "2025-07-05T20:05:44.777473",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1477-product-of-the-last-k-numbers_Notes.md",
+    "size": {
+      "bytes": 20761,
+      "kb": 20.27,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:07:15.952573",
+    "created": "2025-07-05T20:07:15.952573",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Notes.md",
+    "size": {
+      "bytes": 32452,
+      "kb": 31.69,
+      "mb": 0.03,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:08:44.612808",
+    "created": "2025-07-05T20:08:44.612808",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1819-construct-the-lexicographically-largest-valid-sequence_Notes.md",
+    "size": {
+      "bytes": 24813,
+      "kb": 24.23,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:10:04.116746",
+    "created": "2025-07-05T20:10:03.819911",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1915-check-if-one-string-swap-can-make-strings-equal_Notes.md",
+    "size": {
+      "bytes": 20007,
+      "kb": 19.54,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:11:23.318324",
+    "created": "2025-07-05T20:11:23.318324",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\1927-maximum-ascending-subarray-sum_Notes.md",
+    "size": {
+      "bytes": 17657,
+      "kb": 17.24,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:12:30.396070",
+    "created": "2025-07-05T20:12:30.364819",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2021-remove-all-occurrences-of-a-substring_Notes.md",
+    "size": {
+      "bytes": 19199,
+      "kb": 18.75,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:13:29.109039",
+    "created": "2025-07-05T20:13:29.109039",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2107-find-unique-binary-string_Notes.md",
+    "size": {
+      "bytes": 14625,
+      "kb": 14.28,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:14:45.728768",
+    "created": "2025-07-05T20:14:45.426970",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2434-design-a-number-container-system_Notes.md",
+    "size": {
+      "bytes": 22147,
+      "kb": 21.63,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:16:06.676932",
+    "created": "2025-07-05T20:16:06.661342",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2448-count-number-of-bad-pairs_Notes.md",
+    "size": {
+      "bytes": 19158,
+      "kb": 18.71,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:17:07.646565",
+    "created": "2025-07-05T20:17:07.646565",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2456-construct-smallest-number-from-di-string_Notes.md",
+    "size": {
+      "bytes": 22268,
+      "kb": 21.75,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:18:53.727883",
+    "created": "2025-07-05T20:18:53.727883",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2473-max-sum-of-a-pair-with-equal-sum-of-digits_Notes.md",
+    "size": {
+      "bytes": 24186,
+      "kb": 23.62,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:20:11.429331",
+    "created": "2025-07-05T20:20:11.429331",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\27-remove-element_Notes.md",
+    "size": {
+      "bytes": 19459,
+      "kb": 19.0,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:21:17.964342",
+    "created": "2025-07-05T20:21:17.964342",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\2802-find-the-punishment-number-of-an-integer_Notes.md",
+    "size": {
+      "bytes": 24538,
+      "kb": 23.96,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:23:01.422566",
+    "created": "2025-07-05T20:23:01.422566",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3309-count-prefix-and-suffix-pairs-i_Notes.md",
+    "size": {
+      "bytes": 20407,
+      "kb": 19.93,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:24:22.365242",
+    "created": "2025-07-05T20:24:22.349618",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3332-minimum-operations-to-exceed-threshold-value-ii_Notes.md",
+    "size": {
+      "bytes": 17027,
+      "kb": 16.63,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:25:24.437049",
+    "created": "2025-07-05T20:25:24.437049",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3372-longest-strictly-increasing-or-strictly-decreasing-subarray_Notes.md",
+    "size": {
+      "bytes": 18462,
+      "kb": 18.03,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:26:22.307185",
+    "created": "2025-07-05T20:26:22.306186",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3429-special-array-i_Notes.md",
+    "size": {
+      "bytes": 15834,
+      "kb": 15.46,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:27:22.645933",
+    "created": "2025-07-05T20:27:22.645933",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3434-find-the-number-of-distinct-colors-among-the-balls_Notes.md",
+    "size": {
+      "bytes": 17922,
+      "kb": 17.5,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:28:22.505503",
+    "created": "2025-07-05T20:28:22.489875",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3447-clear-digits_Notes.md",
+    "size": {
+      "bytes": 20641,
+      "kb": 20.16,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:29:31.480726",
+    "created": "2025-07-05T20:29:31.480726",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3483-alternating-groups-ii_Notes.md",
+    "size": {
+      "bytes": 20601,
+      "kb": 20.12,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:30:47.965602",
+    "created": "2025-07-05T20:30:47.682646",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\88-merge-sorted-array_Notes.md",
+    "size": {
+      "bytes": 22219,
+      "kb": 21.7,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:32:00.602259",
+    "created": "2025-07-05T20:32:00.602259",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1160-letter-tile-possibilities_Atomic_Notes.md",
+    "size": {
+      "bytes": 7063,
+      "kb": 6.9,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:03:44.785780",
+    "created": "2025-07-05T20:03:44.785780",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1364-tuple-with-same-product_Atomic_Notes.md",
+    "size": {
+      "bytes": 7448,
+      "kb": 7.27,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:05:01.565803",
+    "created": "2025-07-05T20:05:01.565803",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1387-find-elements-in-a-contaminated-binary-tree_Atomic_Notes.md",
+    "size": {
+      "bytes": 6371,
+      "kb": 6.22,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:06:17.889365",
+    "created": "2025-07-05T20:06:17.889365",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1477-product-of-the-last-k-numbers_Atomic_Notes.md",
+    "size": {
+      "bytes": 6907,
+      "kb": 6.75,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:07:46.378723",
+    "created": "2025-07-05T20:07:46.376530",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Atomic_Notes.md",
+    "size": {
+      "bytes": 5306,
+      "kb": 5.18,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:09:13.889784",
+    "created": "2025-07-05T20:09:13.889784",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1819-construct-the-lexicographically-largest-valid-sequence_Atomic_Notes.md",
+    "size": {
+      "bytes": 8384,
+      "kb": 8.19,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:10:39.808243",
+    "created": "2025-07-05T20:10:39.808243",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1915-check-if-one-string-swap-can-make-strings-equal_Atomic_Notes.md",
+    "size": {
+      "bytes": 8692,
+      "kb": 8.49,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:11:59.184318",
+    "created": "2025-07-05T20:11:59.184318",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\1927-maximum-ascending-subarray-sum_Atomic_Notes.md",
+    "size": {
+      "bytes": 5055,
+      "kb": 4.94,
       "mb": 0.0,
       "gb": 0.0
     },
-    "modified": "2025-01-07T20:28:52.720100",
-    "created": "2025-01-07T20:28:52.719126",
+    "modified": "2025-07-05T20:12:54.839698",
+    "created": "2025-07-05T20:12:54.839698",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2021-remove-all-occurrences-of-a-substring_Atomic_Notes.md",
+    "size": {
+      "bytes": 7173,
+      "kb": 7.0,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:14:05.300640",
+    "created": "2025-07-05T20:14:05.300640",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2107-find-unique-binary-string_Atomic_Notes.md",
+    "size": {
+      "bytes": 8744,
+      "kb": 8.54,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:15:22.684299",
+    "created": "2025-07-05T20:15:22.684299",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2434-design-a-number-container-system_Atomic_Notes.md",
+    "size": {
+      "bytes": 6652,
+      "kb": 6.5,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:16:29.759086",
+    "created": "2025-07-05T20:16:29.759086",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2448-count-number-of-bad-pairs_Atomic_Notes.md",
+    "size": {
+      "bytes": 4709,
+      "kb": 4.6,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:17:34.369932",
+    "created": "2025-07-05T20:17:34.369932",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2456-construct-smallest-number-from-di-string_Atomic_Notes.md",
+    "size": {
+      "bytes": 6889,
+      "kb": 6.73,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:19:24.914035",
+    "created": "2025-07-05T20:19:24.914035",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2473-max-sum-of-a-pair-with-equal-sum-of-digits_Atomic_Notes.md",
+    "size": {
+      "bytes": 5899,
+      "kb": 5.76,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:20:42.518712",
+    "created": "2025-07-05T20:20:42.518712",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\27-remove-element_Atomic_Notes.md",
+    "size": {
+      "bytes": 6010,
+      "kb": 5.87,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:21:54.862262",
+    "created": "2025-07-05T20:21:54.861276",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\2802-find-the-punishment-number-of-an-integer_Atomic_Notes.md",
+    "size": {
+      "bytes": 4789,
+      "kb": 4.68,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:23:33.416642",
+    "created": "2025-07-05T20:23:33.416642",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3309-count-prefix-and-suffix-pairs-i_Atomic_Notes.md",
+    "size": {
+      "bytes": 5383,
+      "kb": 5.26,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:24:51.322748",
+    "created": "2025-07-05T20:24:51.322748",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3332-minimum-operations-to-exceed-threshold-value-ii_Atomic_Notes.md",
+    "size": {
+      "bytes": 4596,
+      "kb": 4.49,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:25:48.416083",
+    "created": "2025-07-05T20:25:48.416083",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3372-longest-strictly-increasing-or-strictly-decreasing-subarray_Atomic_Notes.md",
+    "size": {
+      "bytes": 7114,
+      "kb": 6.95,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:26:55.190089",
+    "created": "2025-07-05T20:26:55.188984",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3429-special-array-i_Atomic_Notes.md",
+    "size": {
+      "bytes": 4018,
+      "kb": 3.92,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:27:44.925405",
+    "created": "2025-07-05T20:27:44.925405",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3434-find-the-number-of-distinct-colors-among-the-balls_Atomic_Notes.md",
+    "size": {
+      "bytes": 6118,
+      "kb": 5.97,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:28:56.869359",
+    "created": "2025-07-05T20:28:56.864396",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3447-clear-digits_Atomic_Notes.md",
+    "size": {
+      "bytes": 6096,
+      "kb": 5.95,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:29:57.953305",
+    "created": "2025-07-05T20:29:57.953305",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\3483-alternating-groups-ii_Atomic_Notes.md",
+    "size": {
+      "bytes": 6060,
+      "kb": 5.92,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:31:19.665506",
+    "created": "2025-07-05T20:31:19.665506",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\88-merge-sorted-array_Atomic_Notes.md",
+    "size": {
+      "bytes": 6278,
+      "kb": 6.13,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:32:34.353401",
+    "created": "2025-07-05T20:32:34.353401",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1160-letter-tile-possibilities_Short_Notes.md",
+    "size": {
+      "bytes": 2816,
+      "kb": 2.75,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:03:23.421314",
+    "created": "2025-07-05T20:03:23.421314",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1364-tuple-with-same-product_Short_Notes.md",
+    "size": {
+      "bytes": 3451,
+      "kb": 3.37,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:04:36.602059",
+    "created": "2025-07-05T20:04:36.602059",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1387-find-elements-in-a-contaminated-binary-tree_Short_Notes.md",
+    "size": {
+      "bytes": 3260,
+      "kb": 3.18,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:05:55.977325",
+    "created": "2025-07-05T20:05:55.961720",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1477-product-of-the-last-k-numbers_Short_Notes.md",
+    "size": {
+      "bytes": 3407,
+      "kb": 3.33,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:07:26.017972",
+    "created": "2025-07-05T20:07:26.017972",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Short_Notes.md",
+    "size": {
+      "bytes": 3950,
+      "kb": 3.86,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:08:58.044543",
+    "created": "2025-07-05T20:08:58.044543",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1819-construct-the-lexicographically-largest-valid-sequence_Short_Notes.md",
+    "size": {
+      "bytes": 3619,
+      "kb": 3.53,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:10:15.000612",
+    "created": "2025-07-05T20:10:15.000612",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1915-check-if-one-string-swap-can-make-strings-equal_Short_Notes.md",
+    "size": {
+      "bytes": 3244,
+      "kb": 3.17,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:11:35.020688",
+    "created": "2025-07-05T20:11:35.020688",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\1927-maximum-ascending-subarray-sum_Short_Notes.md",
+    "size": {
+      "bytes": 3032,
+      "kb": 2.96,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:12:44.130590",
+    "created": "2025-07-05T20:12:44.114966",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2021-remove-all-occurrences-of-a-substring_Short_Notes.md",
+    "size": {
+      "bytes": 3335,
+      "kb": 3.26,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:13:41.880333",
+    "created": "2025-07-05T20:13:41.880333",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2107-find-unique-binary-string_Short_Notes.md",
+    "size": {
+      "bytes": 2728,
+      "kb": 2.66,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:14:54.046248",
+    "created": "2025-07-05T20:14:54.046248",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2434-design-a-number-container-system_Short_Notes.md",
+    "size": {
+      "bytes": 3436,
+      "kb": 3.36,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:16:15.649469",
+    "created": "2025-07-05T20:16:15.649469",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2448-count-number-of-bad-pairs_Short_Notes.md",
+    "size": {
+      "bytes": 3747,
+      "kb": 3.66,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:17:18.242989",
+    "created": "2025-07-05T20:17:18.242989",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2456-construct-smallest-number-from-di-string_Short_Notes.md",
+    "size": {
+      "bytes": 2974,
+      "kb": 2.9,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:19:02.365553",
+    "created": "2025-07-05T20:19:02.349924",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2473-max-sum-of-a-pair-with-equal-sum-of-digits_Short_Notes.md",
+    "size": {
+      "bytes": 3652,
+      "kb": 3.57,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:20:24.293500",
+    "created": "2025-07-05T20:20:24.293500",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\27-remove-element_Short_Notes.md",
+    "size": {
+      "bytes": 3629,
+      "kb": 3.54,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:21:32.766373",
+    "created": "2025-07-05T20:21:32.766373",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\2802-find-the-punishment-number-of-an-integer_Short_Notes.md",
+    "size": {
+      "bytes": 3294,
+      "kb": 3.22,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:23:13.071043",
+    "created": "2025-07-05T20:23:13.071043",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3309-count-prefix-and-suffix-pairs-i_Short_Notes.md",
+    "size": {
+      "bytes": 3029,
+      "kb": 2.96,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:24:35.974835",
+    "created": "2025-07-05T20:24:35.974835",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3332-minimum-operations-to-exceed-threshold-value-ii_Short_Notes.md",
+    "size": {
+      "bytes": 3314,
+      "kb": 3.24,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:25:36.568772",
+    "created": "2025-07-05T20:25:36.568772",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3372-longest-strictly-increasing-or-strictly-decreasing-subarray_Short_Notes.md",
+    "size": {
+      "bytes": 2706,
+      "kb": 2.64,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:26:33.404590",
+    "created": "2025-07-05T20:26:33.403590",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3429-special-array-i_Short_Notes.md",
+    "size": {
+      "bytes": 2524,
+      "kb": 2.46,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:27:30.552474",
+    "created": "2025-07-05T20:27:30.552474",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3434-find-the-number-of-distinct-colors-among-the-balls_Short_Notes.md",
+    "size": {
+      "bytes": 3406,
+      "kb": 3.33,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:28:36.448715",
+    "created": "2025-07-05T20:28:36.433091",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3447-clear-digits_Short_Notes.md",
+    "size": {
+      "bytes": 2514,
+      "kb": 2.46,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:29:40.603381",
+    "created": "2025-07-05T20:29:40.603381",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3483-alternating-groups-ii_Short_Notes.md",
+    "size": {
+      "bytes": 3103,
+      "kb": 3.03,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:30:58.211690",
+    "created": "2025-07-05T20:30:58.211690",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\88-merge-sorted-array_Short_Notes.md",
+    "size": {
+      "bytes": 3060,
+      "kb": 2.99,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-05T20:32:10.550615",
+    "created": "2025-07-05T20:32:10.550615",
     "extension": ".md"
   },
   {
