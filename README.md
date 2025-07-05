@@ -1,8 +1,9 @@
 # LeetCode
  
+ ```txt
 Directory Structure
 ==================================================
-```txt
+
 ./
 ├── submissions/
 │   ├── 1160-letter-tile-possibilities/
