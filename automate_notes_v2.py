@@ -1,7 +1,7 @@
 import os
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict, Any, Tuple
 from pathlib import Path
 import logging
 from google import genai
@@ -20,6 +20,14 @@ class NoteType(Enum):
     ATOMIC = "atomic"
 
 @dataclass
+class ProblemData:
+    """Container for problem statement and solution code."""
+    problem_number: str
+    problem_statement: str
+    solution_code: str
+    language: str
+
+@dataclass
 class Config:
     """Configuration class for the notes generator."""
     gemini_api_key: str
@@ -27,6 +35,11 @@ class Config:
     submissions_base_path: str = "submissions"
     notes_base_path: str = "Notes"
     encoding: str = "utf-8"
+    supported_code_extensions: List[str] = None
+    
+    def __post_init__(self):
+        if self.supported_code_extensions is None:
+            self.supported_code_extensions = ['.py', '.cpp', '.c', '.java', '.js']
     
     @classmethod
     def from_env(cls) -> 'Config':
@@ -99,24 +112,95 @@ class FileManager:
             for note_type in note_types
         )
     
-    def read_directory_code(self, directory_path: str) -> str:
-        """Read all code from files in a directory."""
-        all_code = []
-        directory = Path(directory_path)
+    def read_problem_data(self, problem_folder_path: str) -> Optional[ProblemData]:
+        """
+        Read both problem statement and solution from a problem folder.
         
-        if not directory.exists():
-            logger.warning(f"Directory {directory_path} does not exist")
-            return ""
+        Args:
+            problem_folder_path (str): Path to the problem folder
+            
+        Returns:
+            Optional[ProblemData]: Problem data if both files found, None otherwise
+        """
+        folder_path = Path(problem_folder_path)
+        problem_number = folder_path.name
         
-        for file_path in directory.rglob("*"):
-            if file_path.is_file():
-                try:
-                    content = file_path.read_text(encoding=self.config.encoding)
-                    all_code.append(content)
-                except Exception as e:
-                    logger.error(f"Error reading file {file_path}: {e}")
+        if not folder_path.exists() or not folder_path.is_dir():
+            logger.error(f"Problem folder {problem_folder_path} does not exist or is not a directory")
+            return None
         
-        return "\n".join(all_code)
+        # Find problem statement (.md file)
+        problem_statement = self._read_problem_statement(folder_path)
+        if not problem_statement:
+            logger.warning(f"No problem statement found in {problem_folder_path}")
+            return None
+        
+        # Find solution code (.py, .cpp, etc.)
+        solution_data = self._read_solution_code(folder_path)
+        if not solution_data:
+            logger.warning(f"No solution code found in {problem_folder_path}")
+            return None
+        
+        solution_code, language = solution_data
+        
+        return ProblemData(
+            problem_number=problem_number,
+            problem_statement=problem_statement,
+            solution_code=solution_code,
+            language=language
+        )
+    
+    def _read_problem_statement(self, folder_path: Path) -> Optional[str]:
+        """Read the problem statement from .md file."""
+        md_files = list(folder_path.glob("*.md"))
+        
+        if not md_files:
+            return None
+        
+        if len(md_files) > 1:
+            logger.warning(f"Multiple .md files found in {folder_path}. Using the first one: {md_files[0].name}")
+        
+        try:
+            return md_files[0].read_text(encoding=self.config.encoding)
+        except Exception as e:
+            logger.error(f"Error reading problem statement from {md_files[0]}: {e}")
+            return None
+    
+    def _read_solution_code(self, folder_path: Path) -> Optional[Tuple[str, str]]:
+        """Read the solution code and determine language."""
+        code_files = []
+        
+        for ext in self.config.supported_code_extensions:
+            code_files.extend(folder_path.glob(f"*{ext}"))
+        
+        if not code_files:
+            return None
+        
+        if len(code_files) > 1:
+            logger.warning(f"Multiple code files found in {folder_path}. Using the first one: {code_files[0].name}")
+        
+        code_file = code_files[0]
+        language = self._get_language_from_extension(code_file.suffix)
+        
+        try:
+            code_content = code_file.read_text(encoding=self.config.encoding)
+            return code_content, language
+        except Exception as e:
+            logger.error(f"Error reading solution code from {code_file}: {e}")
+            return None
+    
+    def _get_language_from_extension(self, extension: str) -> str:
+        """Map file extension to programming language."""
+        extension_map = {
+            '.py': 'python',
+            '.cpp': 'cpp',
+            '.c': 'c',
+            '.java': 'java',
+            '.js': 'javascript',
+            '.go': 'go',
+            '.rs': 'rust'
+        }
+        return extension_map.get(extension.lower(), 'unknown')
     
     def save_notes(self, problem_number: str, content: str, note_type: NoteType) -> bool:
         """Save notes to file."""
@@ -134,66 +218,80 @@ class PromptManager:
     """Manages prompts for different note types."""
     
     @staticmethod
-    def get_complete_notes_prompt(problem_number: str, problem_code: str, 
-                                 existing_context: str = "") -> str:
-        """Generate prompt for complete notes."""
+    def get_complete_notes_prompt(problem_data: ProblemData) -> str:
+        """Generate prompt for complete notes using both problem statement and solution."""
         return f"""
-        Given the following Python code for LeetCode problem {problem_number}, generate complete, comprehensive notes.
+        Given the following LeetCode problem {problem_data.problem_number} with its problem statement and solution code, generate complete, comprehensive notes.
+        
         The notes should include:
-        1. A clear problem statement.
-        2. Explanation of all approaches, starting from naive to most optimized.
-        3. Detailed explanation of the logic behind each approach.
+        1. A clear problem summary (based on the provided problem statement).
+        2. Explanation of all possible approaches, starting from naive to most optimized.
+        3. Detailed explanation of the logic behind the provided solution and any alternative approaches.
         4. Time and Space Complexity analysis for each approach.
         5. Discuss any edge cases and how they are handled.
-        6. Provide a clean, well-commented code snippet for the most optimized solution.
+        6. Provide a clean, well-commented version of the optimal solution.
+        7. Key insights and patterns that can be applied to similar problems.
 
-        {existing_context}
+        Problem Statement:
+        ```
+        {problem_data.problem_statement}
+        ```
 
-        Problem Code:\n``````
+        Solution Code ({problem_data.language}):
+        ```
+        {problem_data.solution_code}
+        ```
         """
     
     @staticmethod
-    def get_short_notes_prompt(problem_number: str, complete_notes: str) -> str:
+    def get_short_notes_prompt(problem_data: ProblemData, complete_notes: str) -> str:
         """Generate prompt for short notes."""
         return f"""
-        Based on the following comprehensive notes for LeetCode problem {problem_number},
+        Based on the comprehensive notes for LeetCode problem {problem_data.problem_number},
         generate concise short notes suitable for quick revision. Focus on:
-        1. Key ideas for each approach.
-        2. The core concept of the optimal solution.
+        1. Key problem characteristics and constraints.
+        2. Core algorithmic approach used in the solution.
         3. Important time/space complexity facts.
-        4. Any crucial edge cases to remember.
+        4. Critical edge cases to remember.
+        5. Key patterns or techniques used.
 
-        Comprehensive Notes:\n``````
+        Problem Statement:
+        ```
+        {problem_data.problem_statement}
+        ```
+
+        Comprehensive Notes:
+        ```
+        {complete_notes}
+        ```
         """
     
     @staticmethod
-    def get_atomic_notes_prompt(problem_number: str, complete_notes: str, 
+    def get_atomic_notes_prompt(problem_data: ProblemData, complete_notes: str, 
                                short_notes: str) -> str:
         """Generate prompt for atomic notes."""
         return f"""
-        Based on the comprehensive and short notes provided for LeetCode problem {problem_number},
+        Based on the comprehensive and short notes for LeetCode problem {problem_data.problem_number},
         generate a set of atomic notes. Each atomic note should be a self-contained, single-concept
-        idea, fact, or principle. Format each atomic note clearly.
+        idea, fact, or principle that can be used for spaced repetition learning.
 
-        Comprehensive Notes:\n``````
+        Format each atomic note as:
+        - **Concept**: [Single concept or fact]
+        - **Context**: [Brief context or application]
+        - **Example**: [If applicable]
 
-        Short Notes:\n``````
-        """
+        Problem Number: {problem_data.problem_number}
 
-class ProblemExtractor:
-    """Extracts problem information from file paths."""
-    
-    @staticmethod
-    def extract_problem_number(filepath: str) -> Optional[str]:
+        Comprehensive Notes:
+        ```
+        {complete_notes}
+        ```
+
+        Short Notes:
+        ```
+        {short_notes}
+        ```
         """
-        Extract problem number from file path.
-        Assumes naming convention: "PROBLEM_NUMBER-PROBLEM_NAME"
-        """
-        parts = Path(filepath).parts
-        for part in parts:
-            if '-' in part and part[0].isdigit():
-                return part.split('-')[0]
-        return None
 
 class NotesGenerator:
     """Main class for generating notes."""
@@ -203,15 +301,18 @@ class NotesGenerator:
         self.api_client = APIClient(config)
         self.file_manager = FileManager(config)
         self.prompt_manager = PromptManager()
-        self.problem_extractor = ProblemExtractor()
     
-    def generate_notes(self, problem_number: str, note_type: NoteType, 
+    def generate_notes(self, problem_data: ProblemData, note_type: NoteType, 
                       **kwargs) -> Optional[str]:
         """Generate notes of a specific type."""
         prompt_methods = {
-            NoteType.COMPLETE: self.prompt_manager.get_complete_notes_prompt,
-            NoteType.SHORT: self.prompt_manager.get_short_notes_prompt,
-            NoteType.ATOMIC: self.prompt_manager.get_atomic_notes_prompt
+            NoteType.COMPLETE: lambda: self.prompt_manager.get_complete_notes_prompt(problem_data),
+            NoteType.SHORT: lambda: self.prompt_manager.get_short_notes_prompt(
+                problem_data, kwargs.get('complete_notes', '')
+            ),
+            NoteType.ATOMIC: lambda: self.prompt_manager.get_atomic_notes_prompt(
+                problem_data, kwargs.get('complete_notes', ''), kwargs.get('short_notes', '')
+            )
         }
         
         if note_type not in prompt_methods:
@@ -219,65 +320,62 @@ class NotesGenerator:
             return None
         
         try:
-            prompt = prompt_methods[note_type](problem_number, **kwargs)
+            prompt = prompt_methods[note_type]()
             response = self.api_client.get_response(prompt)
             if response:
-                logger.info(f"Successfully generated {note_type.value} notes for problem {problem_number}")
+                logger.info(f"Successfully generated {note_type.value} notes for problem {problem_data.problem_number}")
             return response
         except Exception as e:
-            logger.error(f"Error generating {note_type.value} notes for problem {problem_number}: {e}")
+            logger.error(f"Error generating {note_type.value} notes for problem {problem_data.problem_number}: {e}")
             return None
     
-    def process_problem(self, problem_number: str, problem_code: str) -> Dict[NoteType, bool]:
+    def process_problem(self, problem_data: ProblemData) -> Dict[NoteType, bool]:
         """Process a single problem and generate all types of notes."""
         results = {}
         
         # Generate complete notes
-        complete_notes = self.generate_notes(
-            problem_number, NoteType.COMPLETE, 
-            problem_code=problem_code
-        )
+        complete_notes = self.generate_notes(problem_data, NoteType.COMPLETE)
         
         if complete_notes:
             results[NoteType.COMPLETE] = self.file_manager.save_notes(
-                problem_number, complete_notes, NoteType.COMPLETE
+                problem_data.problem_number, complete_notes, NoteType.COMPLETE
             )
         else:
-            logger.error(f"Failed to generate complete notes for problem {problem_number}")
+            logger.error(f"Failed to generate complete notes for problem {problem_data.problem_number}")
             return results
         
         # Generate short notes
         short_notes = self.generate_notes(
-            problem_number, NoteType.SHORT,
+            problem_data, NoteType.SHORT,
             complete_notes=complete_notes
         )
         
         if short_notes:
             results[NoteType.SHORT] = self.file_manager.save_notes(
-                problem_number, short_notes, NoteType.SHORT
+                problem_data.problem_number, short_notes, NoteType.SHORT
             )
         else:
-            logger.warning(f"Failed to generate short notes for problem {problem_number}")
+            logger.warning(f"Failed to generate short notes for problem {problem_data.problem_number}")
         
         # Generate atomic notes
-        if short_notes:  # Only generate atomic notes if short notes exist
+        if short_notes:
             atomic_notes = self.generate_notes(
-                problem_number, NoteType.ATOMIC,
+                problem_data, NoteType.ATOMIC,
                 complete_notes=complete_notes,
                 short_notes=short_notes
             )
             
             if atomic_notes:
                 results[NoteType.ATOMIC] = self.file_manager.save_notes(
-                    problem_number, atomic_notes, NoteType.ATOMIC
+                    problem_data.problem_number, atomic_notes, NoteType.ATOMIC
                 )
             else:
-                logger.warning(f"Failed to generate atomic notes for problem {problem_number}")
+                logger.warning(f"Failed to generate atomic notes for problem {problem_data.problem_number}")
         
         return results
     
     def process_submissions_directory(self) -> Dict[str, Dict[NoteType, bool]]:
-        """Process all submissions in the base directory."""
+        """Process all problem folders in the base directory."""
         submissions_path = Path(self.config.submissions_base_path)
         
         if not submissions_path.exists():
@@ -288,11 +386,7 @@ class NotesGenerator:
         
         for folder_path in submissions_path.iterdir():
             if folder_path.is_dir():
-                problem_number = self.problem_extractor.extract_problem_number(str(folder_path))
-                
-                if not problem_number:
-                    logger.warning(f"Could not extract problem number from {folder_path.name}")
-                    continue
+                problem_number = folder_path.name
                 
                 logger.info(f"Processing problem {problem_number} from folder {folder_path.name}")
                 
@@ -301,14 +395,14 @@ class NotesGenerator:
                     logger.info(f"Notes for problem {problem_number} already exist. Skipping.")
                     continue
                 
-                # Read code from directory
-                problem_code = self.file_manager.read_directory_code(str(folder_path))
-                if not problem_code:
-                    logger.warning(f"No code found in {folder_path}. Skipping.")
+                # Read problem data (statement + solution)
+                problem_data = self.file_manager.read_problem_data(str(folder_path))
+                if not problem_data:
+                    logger.warning(f"Could not read problem data from {folder_path}. Skipping.")
                     continue
                 
                 # Process the problem
-                results[problem_number] = self.process_problem(problem_number, problem_code)
+                results[problem_number] = self.process_problem(problem_data)
         
         return results
 
