@@ -2,7 +2,7 @@
  
 Directory Structure
 ==================================================
-
+```txt
 ./
 ├── submissions/
 │   ├── 1160-letter-tile-possibilities/
@@ -89,6 +89,7 @@ Directory Structure
 ├── file_traverse_v1.1.py (3.86 KB) [.py] (Modified: 2025-07-05)
 └── file_traverse_v1.2.py (16.99 KB) [.py] (Modified: 2025-07-05)
 
+
 ==================================================
 Summary
 ==================================================
@@ -100,3 +101,5 @@ Files by Extension:
   .json: 1 files
   .md: 27 files
   .py: 15 files
+
+```
