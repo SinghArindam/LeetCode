@@ -6,11 +6,5 @@ class Solution:
         while k>len(nums):
             k -= len(nums)
         nums[:] = nums[-k:] + nums[:-k]
-        # new_nums = []
-        # if k>=len(nums):
-        #     return
-        # for i in range(len(nums)):
-        #     new_nums.append(nums[i-k])
-        # nums[:] = new_nums
 
         
