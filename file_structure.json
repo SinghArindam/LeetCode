@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 51514,
-      "kb": 50.31,
+      "bytes": 51816,
+      "kb": 50.6,
       "mb": 0.05,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:03:48.344026",
+    "modified": "2025-07-10T20:04:37.804316",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,36 +62,36 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 11979,
-      "kb": 11.7,
-      "mb": 0.01,
+      "bytes": 19165,
+      "kb": 18.72,
+      "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-07-07T20:45:07.154956",
+    "modified": "2025-07-10T20:05:40.874768",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
   {
     "relative_path": ".\\readme_generation_automation.py",
     "size": {
-      "bytes": 9791,
-      "kb": 9.56,
+      "bytes": 14267,
+      "kb": 13.93,
       "mb": 0.01,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:00:05.481701",
+    "modified": "2025-07-10T20:08:59.879673",
     "created": "2025-07-10T19:59:28.442795",
     "extension": ".py"
   },
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 6694,
-      "kb": 6.54,
+      "bytes": 14757,
+      "kb": 14.41,
       "mb": 0.01,
       "gb": 0.0
     },
-    "modified": "2025-07-07T20:45:07.155735",
+    "modified": "2025-07-10T20:04:37.804316",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -117,6 +117,18 @@
     },
     "modified": "2025-07-10T20:01:04.776797",
     "created": "2025-07-10T20:01:04.470395",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\122-best-time-to-buy-and-sell-stock-ii_Notes.md",
+    "size": {
+      "bytes": 17153,
+      "kb": 16.75,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:24:17.452735",
+    "created": "2025-07-10T20:24:17.452735",
     "extension": ".md"
   },
   {
@@ -480,6 +492,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md",
+    "size": {
+      "bytes": 7800,
+      "kb": 7.62,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:24:52.678320",
+    "created": "2025-07-10T20:24:52.677244",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\1364-tuple-with-same-product_Atomic_Notes.md",
     "size": {
       "bytes": 7448,
@@ -837,6 +861,18 @@
     },
     "modified": "2025-07-10T20:01:12.877566",
     "created": "2025-07-10T20:01:12.877566",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md",
+    "size": {
+      "bytes": 2896,
+      "kb": 2.83,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:24:26.151414",
+    "created": "2025-07-10T20:24:26.151414",
     "extension": ".md"
   },
   {
@@ -1221,6 +1257,30 @@
     },
     "modified": "2025-07-10T19:55:01.180034",
     "created": "2025-07-10T19:55:01.180034",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\122-best-time-to-buy-and-sell-stock-ii\\best-time-to-buy-and-sell-stock-ii.py",
+    "size": {
+      "bytes": 330,
+      "kb": 0.32,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:19:13.420644",
+    "created": "2025-07-10T20:19:13.420644",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\122-best-time-to-buy-and-sell-stock-ii\\README.md",
+    "size": {
+      "bytes": 1825,
+      "kb": 1.78,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:19:13.404142",
+    "created": "2025-07-10T20:19:13.404142",
     "extension": ".md"
   },
   {
@@ -1929,6 +1989,18 @@
     },
     "modified": "2025-07-10T20:04:33.671766",
     "created": "2025-07-10T20:04:33.671766",
+    "extension": ".pyc"
+  },
+  {
+    "relative_path": "__pycache__\\filetreegen_v1_2.cpython-313.pyc",
+    "size": {
+      "bytes": 19409,
+      "kb": 18.95,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-10T20:09:09.606516",
+    "created": "2025-07-10T20:09:09.605517",
     "extension": ".pyc"
   }
 ]
