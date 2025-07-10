@@ -94,6 +94,8 @@
 ### [3483] Alternating Groups Ii
 - [Complete Notes](Notes/3483-alternating-groups-ii_Notes.md) | [Short Notes](Notes/Short_Notes/3483-alternating-groups-ii_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/3483-alternating-groups-ii_Atomic_Notes.md)
 
+
+## File Structure
 ```txt./
 ├── Notes/
 │   ├── Atomic_Notes/
@@ -296,10 +298,10 @@
 ├── TREE_FILE.txt (14.92 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (52.48 KB) [.json]
+├── file_structure.json (52.49 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
-└── readme_generation_automation.py (13.94 KB) [.py]
+└── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
 Total Files: 167
