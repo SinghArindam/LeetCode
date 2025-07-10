@@ -267,6 +267,7 @@ def generate_readme():
             readme_content.append(f"- {' | '.join(links)}\n") # MODIFIED LINE
         readme_content.append("\n") # Add a newline for separation
         
+    readme_content.append("\n## File Structure\n")
     # Embed the directory structure from TREE_FILE.txt
     if TREE_FILE_PATH.exists():
         readme_content.append("```txt")
