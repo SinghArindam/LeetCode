@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 51816,
-      "kb": 50.6,
+      "bytes": 53744,
+      "kb": 52.48,
       "mb": 0.05,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:04:37.804316",
+    "modified": "2025-07-10T20:24:53.162862",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,36 +62,36 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 19165,
-      "kb": 18.72,
+      "bytes": 24617,
+      "kb": 24.04,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:05:40.874768",
+    "modified": "2025-07-10T20:24:53.196377",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
   {
     "relative_path": ".\\readme_generation_automation.py",
     "size": {
-      "bytes": 14267,
-      "kb": 13.93,
+      "bytes": 14275,
+      "kb": 13.94,
       "mb": 0.01,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:08:59.879673",
+    "modified": "2025-07-10T20:25:37.158819",
     "created": "2025-07-10T19:59:28.442795",
     "extension": ".py"
   },
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 14757,
-      "kb": 14.41,
+      "bytes": 15281,
+      "kb": 14.92,
       "mb": 0.01,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:04:37.804316",
+    "modified": "2025-07-10T20:24:53.179017",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
