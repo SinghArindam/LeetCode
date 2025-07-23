@@ -43,7 +43,7 @@
       "mb": 0.05,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:26:42.262312",
+    "modified": "2025-07-10T20:30:29.547836",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 24618,
-      "kb": 24.04,
+      "bytes": 24639,
+      "kb": 24.06,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:26:42.293566",
+    "modified": "2025-07-10T20:30:29.704093",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -91,7 +91,7 @@
       "mb": 0.01,
       "gb": 0.0
     },
-    "modified": "2025-07-10T20:26:42.262312",
+    "modified": "2025-07-10T20:30:29.547836",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -129,6 +129,18 @@
     },
     "modified": "2025-07-10T20:24:17.452735",
     "created": "2025-07-10T20:24:17.452735",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\13-roman-to-integer_Notes.md",
+    "size": {
+      "bytes": 27899,
+      "kb": 27.25,
+      "mb": 0.03,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:25:38.016377",
+    "created": "2025-07-23T21:25:38.016377",
     "extension": ".md"
   },
   {
@@ -444,6 +456,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\55-jump-game_Notes.md",
+    "size": {
+      "bytes": 17258,
+      "kb": 16.85,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:26:47.572327",
+    "created": "2025-07-23T21:26:47.572327",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\80-remove-duplicates-from-sorted-array-ii_Notes.md",
     "size": {
       "bytes": 20036,
@@ -501,6 +525,18 @@
     },
     "modified": "2025-07-10T20:24:52.678320",
     "created": "2025-07-10T20:24:52.677244",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Atomic_Notes\\13-roman-to-integer_Atomic_Notes.md",
+    "size": {
+      "bytes": 4508,
+      "kb": 4.4,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:25:59.800777",
+    "created": "2025-07-23T21:25:59.769843",
     "extension": ".md"
   },
   {
@@ -816,6 +852,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\55-jump-game_Atomic_Notes.md",
+    "size": {
+      "bytes": 5849,
+      "kb": 5.71,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:27:16.631372",
+    "created": "2025-07-23T21:27:16.631372",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\80-remove-duplicates-from-sorted-array-ii_Atomic_Notes.md",
     "size": {
       "bytes": 6579,
@@ -873,6 +921,18 @@
     },
     "modified": "2025-07-10T20:24:26.151414",
     "created": "2025-07-10T20:24:26.151414",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\13-roman-to-integer_Short_Notes.md",
+    "size": {
+      "bytes": 3220,
+      "kb": 3.14,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:25:48.566406",
+    "created": "2025-07-23T21:25:48.566406",
     "extension": ".md"
   },
   {
@@ -1188,6 +1248,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Short_Notes\\55-jump-game_Short_Notes.md",
+    "size": {
+      "bytes": 2457,
+      "kb": 2.4,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:26:57.416943",
+    "created": "2025-07-23T21:26:57.415939",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Short_Notes\\80-remove-duplicates-from-sorted-array-ii_Short_Notes.md",
     "size": {
       "bytes": 3006,
@@ -1282,6 +1354,30 @@
     "modified": "2025-07-10T20:19:13.404142",
     "created": "2025-07-10T20:19:13.404142",
     "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\13-roman-to-integer\\README.md",
+    "size": {
+      "bytes": 2734,
+      "kb": 2.67,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:23:22.617182",
+    "created": "2025-07-23T21:23:22.617182",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\13-roman-to-integer\\roman-to-integer.py",
+    "size": {
+      "bytes": 1123,
+      "kb": 1.1,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:23:22.633978",
+    "created": "2025-07-23T21:23:22.633978",
+    "extension": ".py"
   },
   {
     "relative_path": "submissions\\1364-tuple-with-same-product\\README.md",
@@ -1929,6 +2025,30 @@
     },
     "modified": "2025-07-07T20:45:07.199380",
     "created": "2025-07-07T20:45:07.199380",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\55-jump-game\\jump-game.py",
+    "size": {
+      "bytes": 363,
+      "kb": 0.35,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:23:22.667066",
+    "created": "2025-07-23T21:23:22.667066",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\55-jump-game\\README.md",
+    "size": {
+      "bytes": 1268,
+      "kb": 1.24,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-07-23T21:23:22.650514",
+    "created": "2025-07-23T21:23:22.650514",
     "extension": ".md"
   },
   {

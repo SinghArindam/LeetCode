@@ -7,6 +7,7 @@ Directory Structure
 │   │   ├── 1160-letter-tile-possibilities_Atomic_Notes.md (6.9 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Atomic_Notes.md (6.05 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
+│   │   ├── 13-roman-to-integer_Atomic_Notes.md (4.4 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Atomic_Notes.md (7.27 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Atomic_Notes.md (6.22 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Atomic_Notes.md (6.75 KB) [.md]
@@ -33,12 +34,14 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Atomic_Notes.md (5.97 KB) [.md]
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
+│   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Atomic_Notes.md (6.42 KB) [.md]
 │   │   └── 88-merge-sorted-array_Atomic_Notes.md (6.13 KB) [.md]
 │   ├── Short_Notes/
 │   │   ├── 1160-letter-tile-possibilities_Short_Notes.md (2.75 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Short_Notes.md (2.59 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
+│   │   ├── 13-roman-to-integer_Short_Notes.md (3.14 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Short_Notes.md (3.37 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Short_Notes.md (3.18 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Short_Notes.md (3.33 KB) [.md]
@@ -65,11 +68,13 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Short_Notes.md (3.33 KB) [.md]
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
+│   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Short_Notes.md (2.94 KB) [.md]
 │   │   └── 88-merge-sorted-array_Short_Notes.md (2.99 KB) [.md]
 │   ├── 1160-letter-tile-possibilities_Notes.md (23.52 KB) [.md]
 │   ├── 121-best-time-to-buy-and-sell-stock_Notes.md (17.02 KB) [.md]
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
+│   ├── 13-roman-to-integer_Notes.md (27.25 KB) [.md]
 │   ├── 1364-tuple-with-same-product_Notes.md (18.31 KB) [.md]
 │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Notes.md (21.37 KB) [.md]
 │   ├── 1477-product-of-the-last-k-numbers_Notes.md (20.27 KB) [.md]
@@ -96,6 +101,7 @@ Directory Structure
 │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Notes.md (17.5 KB) [.md]
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
+│   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
 │   ├── 80-remove-duplicates-from-sorted-array-ii_Notes.md (19.57 KB) [.md]
 │   └── 88-merge-sorted-array_Notes.md (21.7 KB) [.md]
 ├── __pycache__/
@@ -111,6 +117,9 @@ Directory Structure
 │   ├── 122-best-time-to-buy-and-sell-stock-ii/
 │   │   ├── README.md (1.78 KB) [.md]
 │   │   └── best-time-to-buy-and-sell-stock-ii.py (330 bytes) [.py]
+│   ├── 13-roman-to-integer/
+│   │   ├── README.md (2.67 KB) [.md]
+│   │   └── roman-to-integer.py (1.1 KB) [.py]
 │   ├── 1364-tuple-with-same-product/
 │   │   ├── README.md (1.54 KB) [.md]
 │   │   └── tuple-with-same-product.py (750 bytes) [.py]
@@ -193,13 +202,16 @@ Directory Structure
 │   ├── 3483-alternating-groups-ii/
 │   │   ├── README.md (5.14 KB) [.md]
 │   │   └── alternating-groups-ii.cpp (1.18 KB) [.cpp]
+│   ├── 55-jump-game/
+│   │   ├── README.md (1.24 KB) [.md]
+│   │   └── jump-game.py (363 bytes) [.py]
 │   ├── 80-remove-duplicates-from-sorted-array-ii/
 │   │   ├── README.md (3.01 KB) [.md]
 │   │   └── remove-duplicates-from-sorted-array-ii.py (301 bytes) [.py]
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (24.04 KB) [.md]
+├── README.md (24.06 KB) [.md]
 ├── TREE_FILE.txt (14.92 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
@@ -211,13 +223,13 @@ Directory Structure
 ==================================================
 Summary
 ==================================================
-Total Files: 167
-Total Size: 1.18 MB
+Total Files: 177
+Total Size: 1.25 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 127 files
-  .py: 21 files
+  .md: 135 files
+  .py: 23 files
   .pyc: 2 files
   .txt: 2 files
