@@ -31,20 +31,29 @@ class Solution:
         # print(len(nums_double))
 
         # Approach 3
-        nums_single = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+        # nums_single = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+        # num = nums_single[s[-1]]
+        # next_num = 0
+        # n = len(s)
+        # for i in range(n-2, -1, -1):
+        #     curr_num = nums_single[s[i]]
+        #     next_num = nums_single[s[i+1]]
+        #     print(i, s[i], curr_num)
+        #     print(i+1, s[i+1], next_num)
+        #     print()
+        #     if curr_num < next_num:
+        #         num -= curr_num
+        #     else:
+        #         num += curr_num
+
+        # Approach 4
+        nums_single = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         num = nums_single[s[-1]]
-        next_num = 0
-        n = len(s)
-        for i in range(n-2, -1, -1):
-            curr_num = nums_single[s[i]]
-            next_num = nums_single[s[i+1]]
-            print(i, s[i], curr_num)
-            print(i+1, s[i+1], next_num)
-            print()
-            if curr_num < next_num:
-                num -= curr_num
+        for i in range(len(s) - 2, -1, -1):
+            if nums_single[s[i]] < nums_single[s[i+1]]:
+                num -= nums_single[s[i]]
             else:
-                num += curr_num
+                num += nums_single[s[i]]
 
         return num
         
