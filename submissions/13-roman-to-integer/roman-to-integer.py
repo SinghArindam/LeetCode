@@ -32,14 +32,16 @@ class Solution:
 
         # Approach 3
         nums_single = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
-        num = 0
-        prev_num = 0
-        for i in range(len(s)-1, -1, -1):
+        num = nums_single[s[-1]]
+        next_num = 0
+        n = len(s)
+        for i in range(n-2, -1, -1):
             curr_num = nums_single[s[i]]
-            if i != len(s)-1:
-                prev_num = nums_single[s[i+1]]
-            print(i, s[i], curr_num, prev_num)
-            if curr_num < prev_num:
+            next_num = nums_single[s[i+1]]
+            print(i, s[i], curr_num)
+            print(i+1, s[i+1], next_num)
+            print()
+            if curr_num < next_num:
                 num -= curr_num
             else:
                 num += curr_num
