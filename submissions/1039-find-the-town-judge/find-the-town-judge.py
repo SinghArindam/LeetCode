@@ -1,5 +1,6 @@
 class Solution:
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
+        # Approach 1
         # if n==1:
         #     return 1     
         # adj_list = [[] for _ in range(n+1)]
