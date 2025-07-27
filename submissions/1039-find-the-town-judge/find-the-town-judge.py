@@ -21,17 +21,34 @@ class Solution:
 
         # approach 2
         
-        if n==1:
-            return 1
-        trusts_count = [0] * (n+1)
-        trusted_by_count = [0] * (n+1)
-        for i, j in trust:
-            trusts_count[i]+=1
-            trusted_by_count[j]+=1
-        for z in range(1, n+1):
-            if trusts_count[z]==0 and trusted_by_count[z]==n-1:
-                return z
-        return -1
+        # if n==1:
+        #     return 1
+        # trusts_count = [0] * (n+1)
+        # trusted_by_count = [0] * (n+1)
+        # for i, j in trust:
+        #     trusts_count[i]+=1
+        #     trusted_by_count[j]+=1
+        # for z in range(1, n+1):
+        #     if trusts_count[z]==0 and trusted_by_count[z]==n-1:
+        #         return z
+        # return -1
 
-        return judge
+        # return judge
+
+
+        # Approach 3
+        if len(trust) < n - 1:
+            return -1
+
+        trust_balance = [0] * (n + 1)
+
+        for i, j in trust:
+            trust_balance[i] -= 1
+            trust_balance[j] += 1
+        
+        for z in range(1, n + 1):
+            if trust_balance[z] == n - 1:
+                return z
+        
+        return -1
         
