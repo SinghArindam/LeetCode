@@ -4,6 +4,8 @@ Directory Structure
 ./
 ├── Notes/
 │   ├── Atomic_Notes/
+│   │   ├── 1036-rotting-oranges_Atomic_Notes.md (5.26 KB) [.md]
+│   │   ├── 1039-find-the-town-judge_Atomic_Notes.md (8.88 KB) [.md]
 │   │   ├── 1160-letter-tile-possibilities_Atomic_Notes.md (6.9 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Atomic_Notes.md (6.05 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
@@ -34,10 +36,13 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Atomic_Notes.md (5.97 KB) [.md]
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
+│   │   ├── 547-number-of-provinces_Atomic_Notes.md (7.42 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Atomic_Notes.md (6.42 KB) [.md]
 │   │   └── 88-merge-sorted-array_Atomic_Notes.md (6.13 KB) [.md]
 │   ├── Short_Notes/
+│   │   ├── 1036-rotting-oranges_Short_Notes.md (3.53 KB) [.md]
+│   │   ├── 1039-find-the-town-judge_Short_Notes.md (3.13 KB) [.md]
 │   │   ├── 1160-letter-tile-possibilities_Short_Notes.md (2.75 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Short_Notes.md (2.59 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
@@ -68,9 +73,12 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Short_Notes.md (3.33 KB) [.md]
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
+│   │   ├── 547-number-of-provinces_Short_Notes.md (3.27 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Short_Notes.md (2.94 KB) [.md]
 │   │   └── 88-merge-sorted-array_Short_Notes.md (2.99 KB) [.md]
+│   ├── 1036-rotting-oranges_Notes.md (38.4 KB) [.md]
+│   ├── 1039-find-the-town-judge_Notes.md (22.31 KB) [.md]
 │   ├── 1160-letter-tile-possibilities_Notes.md (23.52 KB) [.md]
 │   ├── 121-best-time-to-buy-and-sell-stock_Notes.md (17.02 KB) [.md]
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
@@ -101,6 +109,7 @@ Directory Structure
 │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Notes.md (17.5 KB) [.md]
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
+│   ├── 547-number-of-provinces_Notes.md (20.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
 │   ├── 80-remove-duplicates-from-sorted-array-ii_Notes.md (19.57 KB) [.md]
 │   └── 88-merge-sorted-array_Notes.md (21.7 KB) [.md]
@@ -108,6 +117,12 @@ Directory Structure
 │   ├── filetreegen_v1_2.cpython-311.pyc (20.76 KB) [.pyc]
 │   └── filetreegen_v1_2.cpython-313.pyc (18.95 KB) [.pyc]
 ├── submissions/
+│   ├── 1036-rotting-oranges/
+│   │   ├── README.md (1.85 KB) [.md]
+│   │   └── rotting-oranges.py (3.26 KB) [.py]
+│   ├── 1039-find-the-town-judge/
+│   │   ├── README.md (1.98 KB) [.md]
+│   │   └── find-the-town-judge.py (1.56 KB) [.py]
 │   ├── 1160-letter-tile-possibilities/
 │   │   ├── README.md (1.29 KB) [.md]
 │   │   └── letter-tile-possibilities.cpp (898 bytes) [.cpp]
@@ -119,7 +134,7 @@ Directory Structure
 │   │   └── best-time-to-buy-and-sell-stock-ii.py (330 bytes) [.py]
 │   ├── 13-roman-to-integer/
 │   │   ├── README.md (2.67 KB) [.md]
-│   │   └── roman-to-integer.py (1.1 KB) [.py]
+│   │   └── roman-to-integer.py (2.03 KB) [.py]
 │   ├── 1364-tuple-with-same-product/
 │   │   ├── README.md (1.54 KB) [.md]
 │   │   └── tuple-with-same-product.py (750 bytes) [.py]
@@ -202,6 +217,9 @@ Directory Structure
 │   ├── 3483-alternating-groups-ii/
 │   │   ├── README.md (5.14 KB) [.md]
 │   │   └── alternating-groups-ii.cpp (1.18 KB) [.cpp]
+│   ├── 547-number-of-provinces/
+│   │   ├── README.md (1.91 KB) [.md]
+│   │   └── number-of-provinces.py (514 bytes) [.py]
 │   ├── 55-jump-game/
 │   │   ├── README.md (1.24 KB) [.md]
 │   │   └── jump-game.py (363 bytes) [.py]
@@ -211,11 +229,11 @@ Directory Structure
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (24.06 KB) [.md]
-├── TREE_FILE.txt (14.92 KB) [.txt]
+├── README.md (25.14 KB) [.md]
+├── TREE_FILE.txt (15.59 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (52.49 KB) [.json]
+├── file_structure.json (55.39 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
@@ -223,13 +241,13 @@ Directory Structure
 ==================================================
 Summary
 ==================================================
-Total Files: 177
-Total Size: 1.25 MB
+Total Files: 192
+Total Size: 1.37 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 135 files
-  .py: 23 files
+  .md: 147 files
+  .py: 26 files
   .pyc: 2 files
   .txt: 2 files
