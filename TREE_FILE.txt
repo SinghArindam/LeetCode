@@ -36,8 +36,10 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Atomic_Notes.md (5.97 KB) [.md]
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
+│   │   ├── 542-01-matrix_Atomic_Notes.md (6.35 KB) [.md]
 │   │   ├── 547-number-of-provinces_Atomic_Notes.md (7.42 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
+│   │   ├── 733-flood-fill_Atomic_Notes.md (5.29 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Atomic_Notes.md (6.42 KB) [.md]
 │   │   └── 88-merge-sorted-array_Atomic_Notes.md (6.13 KB) [.md]
 │   ├── Short_Notes/
@@ -73,8 +75,10 @@ Directory Structure
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Short_Notes.md (3.33 KB) [.md]
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
+│   │   ├── 542-01-matrix_Short_Notes.md (3.11 KB) [.md]
 │   │   ├── 547-number-of-provinces_Short_Notes.md (3.27 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
+│   │   ├── 733-flood-fill_Short_Notes.md (3.45 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Short_Notes.md (2.94 KB) [.md]
 │   │   └── 88-merge-sorted-array_Short_Notes.md (2.99 KB) [.md]
 │   ├── 1036-rotting-oranges_Notes.md (38.4 KB) [.md]
@@ -109,8 +113,10 @@ Directory Structure
 │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Notes.md (17.5 KB) [.md]
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
+│   ├── 542-01-matrix_Notes.md (20.99 KB) [.md]
 │   ├── 547-number-of-provinces_Notes.md (20.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
+│   ├── 733-flood-fill_Notes.md (21.27 KB) [.md]
 │   ├── 80-remove-duplicates-from-sorted-array-ii_Notes.md (19.57 KB) [.md]
 │   └── 88-merge-sorted-array_Notes.md (21.7 KB) [.md]
 ├── __pycache__/
@@ -217,23 +223,29 @@ Directory Structure
 │   ├── 3483-alternating-groups-ii/
 │   │   ├── README.md (5.14 KB) [.md]
 │   │   └── alternating-groups-ii.cpp (1.18 KB) [.cpp]
+│   ├── 542-01-matrix/
+│   │   ├── 01-matrix.py (2.02 KB) [.py]
+│   │   └── README.md (1.62 KB) [.md]
 │   ├── 547-number-of-provinces/
 │   │   ├── README.md (1.91 KB) [.md]
 │   │   └── number-of-provinces.py (514 bytes) [.py]
 │   ├── 55-jump-game/
 │   │   ├── README.md (1.24 KB) [.md]
 │   │   └── jump-game.py (363 bytes) [.py]
+│   ├── 733-flood-fill/
+│   │   ├── README.md (3.02 KB) [.md]
+│   │   └── flood-fill.py (2.07 KB) [.py]
 │   ├── 80-remove-duplicates-from-sorted-array-ii/
 │   │   ├── README.md (3.01 KB) [.md]
 │   │   └── remove-duplicates-from-sorted-array-ii.py (301 bytes) [.py]
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (25.14 KB) [.md]
-├── TREE_FILE.txt (15.59 KB) [.txt]
+├── README.md (26.95 KB) [.md]
+├── TREE_FILE.txt (16.68 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (55.39 KB) [.json]
+├── file_structure.json (59.86 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
@@ -241,13 +253,13 @@ Directory Structure
 ==================================================
 Summary
 ==================================================
-Total Files: 192
-Total Size: 1.37 MB
+Total Files: 202
+Total Size: 1.45 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 147 files
-  .py: 26 files
+  .md: 155 files
+  .py: 28 files
   .pyc: 2 files
   .txt: 2 files
