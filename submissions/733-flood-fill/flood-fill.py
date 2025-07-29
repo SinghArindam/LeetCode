@@ -1,19 +1,19 @@
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
         # Approach 1
-        def dfs(image, x, y, oldColor, color):
-            if (x < 0 or x >= len(image) or y < 0 or 
-                y >= len(image[0]) or image[x][y] != oldColor):
-                return
-            image[x][y] = color
-            dfs(image, x + 1, y, oldColor, color)
-            dfs(image, x - 1, y, oldColor, color)
-            dfs(image, x, y + 1, oldColor, color)
-            dfs(image, x, y - 1, oldColor, color)
-        if image[sr][sc] == color:
-            return image
-        dfs(image, sr, sc, image[sr][sc], color)
-        return image
+        # def dfs(image, x, y, oldColor, color):
+        #     if (x < 0 or x >= len(image) or y < 0 or 
+        #         y >= len(image[0]) or image[x][y] != oldColor):
+        #         return
+        #     image[x][y] = color
+        #     dfs(image, x + 1, y, oldColor, color)
+        #     dfs(image, x - 1, y, oldColor, color)
+        #     dfs(image, x, y + 1, oldColor, color)
+        #     dfs(image, x, y - 1, oldColor, color)
+        # if image[sr][sc] == color:
+        #     return image
+        # dfs(image, sr, sc, image[sr][sc], color)
+        # return image
 
 
         # Approach 2
@@ -36,4 +36,27 @@ class Solution:
         #                 q.append((x, y))
         #                 # print(q)
         # return image
+
+
+        # Approach 3
+        rows, cols = len(image), len(image[0])
+        start_color = image[sr][sc]
+
+        if start_color == color:
+            return image
+
+        def fill_recursive(r, c):
+            is_out_of_bounds = not (0 <= r < rows and 0 <= c < cols)
+            if is_out_of_bounds or image[r][c] != start_color:
+                return
+
+            image[r][c] = color
+            
+            fill_recursive(r + 1, c)
+            fill_recursive(r - 1, c)
+            fill_recursive(r, c + 1)
+            fill_recursive(r, c - 1)
+
+        fill_recursive(sr, sc)
+        return image
         
