@@ -25,6 +25,9 @@
 ### [122] Best Time To Buy And Sell Stock Ii
 - [Complete Notes](Notes/122-best-time-to-buy-and-sell-stock-ii_Notes.md) | [Short Notes](Notes/Short_Notes/122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md)
 
+### [130] Surrounded Regions
+- [Complete Notes](Notes/130-surrounded-regions_Notes.md) | [Short Notes](Notes/Short_Notes/130-surrounded-regions_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/130-surrounded-regions_Atomic_Notes.md)
+
 ### [169] Majority Element
 - [Complete Notes](Notes/169-majority-element_Notes.md) | [Short Notes](Notes/Short_Notes/169-majority-element_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/169-majority-element_Atomic_Notes.md)
 
@@ -126,6 +129,7 @@
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Atomic_Notes.md (6.05 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
 │   │   ├── 13-roman-to-integer_Atomic_Notes.md (4.4 KB) [.md]
+│   │   ├── 130-surrounded-regions_Atomic_Notes.md (4.45 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Atomic_Notes.md (7.27 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Atomic_Notes.md (6.22 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Atomic_Notes.md (6.75 KB) [.md]
@@ -165,6 +169,7 @@
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Short_Notes.md (2.59 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
 │   │   ├── 13-roman-to-integer_Short_Notes.md (3.14 KB) [.md]
+│   │   ├── 130-surrounded-regions_Short_Notes.md (3.8 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Short_Notes.md (3.37 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Short_Notes.md (3.18 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Short_Notes.md (3.33 KB) [.md]
@@ -203,6 +208,7 @@
 │   ├── 121-best-time-to-buy-and-sell-stock_Notes.md (17.02 KB) [.md]
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
 │   ├── 13-roman-to-integer_Notes.md (27.25 KB) [.md]
+│   ├── 130-surrounded-regions_Notes.md (27.17 KB) [.md]
 │   ├── 1364-tuple-with-same-product_Notes.md (18.31 KB) [.md]
 │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Notes.md (21.37 KB) [.md]
 │   ├── 1477-product-of-the-last-k-numbers_Notes.md (20.27 KB) [.md]
@@ -257,6 +263,9 @@
 │   ├── 13-roman-to-integer/
 │   │   ├── README.md (2.67 KB) [.md]
 │   │   └── roman-to-integer.py (2.03 KB) [.py]
+│   ├── 130-surrounded-regions/
+│   │   ├── README.md (2.63 KB) [.md]
+│   │   └── surrounded-regions.py (5.52 KB) [.py]
 │   ├── 1364-tuple-with-same-product/
 │   │   ├── README.md (1.54 KB) [.md]
 │   │   └── tuple-with-same-product.py (750 bytes) [.py]
@@ -357,24 +366,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (26.95 KB) [.md]
-├── TREE_FILE.txt (16.68 KB) [.txt]
+├── README.md (27.99 KB) [.md]
+├── TREE_FILE.txt (17.33 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (59.86 KB) [.json]
+├── file_structure.json (62.75 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 202
-Total Size: 1.45 MB
+Total Files: 207
+Total Size: 1.49 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 155 files
-  .py: 28 files
+  .md: 159 files
+  .py: 29 files
   .pyc: 2 files
   .txt: 2 files
 ```
