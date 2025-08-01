@@ -57,27 +57,60 @@
 
 
 # Approach 3
-import collections
+# import collections
+# class Solution:
+#     def numEnclaves(self, matrix: list[list[int]]) -> int:
+#         rows = len(matrix)
+#         if not rows:
+#             return 0
+#         cols = len(matrix[0])
+#         walkable_land = collections.deque()
+#         for r in range(rows):
+#             for c in range(cols):
+#                 is_border = r == 0 or r == rows - 1 or c == 0 or c == cols - 1
+#                 if matrix[r][c] == 1 and is_border:
+#                     walkable_land.append((r, c))
+#                     matrix[r][c] = 0
+#         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+#         while walkable_land:
+#             row, col = walkable_land.popleft()
+#             for row_delta, col_delta in directions:
+#                 next_row, next_col = row + row_delta, col + col_delta
+#                 if 0 <= next_row < rows and 0 <= next_col < cols and matrix[next_row][next_col] == 1:
+#                     matrix[next_row][next_col] = 0
+#                     walkable_land.append((next_row, next_col))
+#         isolated_cells = sum(map(sum, matrix))
+#         return isolated_cells
+
+# Approach 4
 class Solution:
-    def numEnclaves(self, matrix: list[list[int]]) -> int:
-        rows = len(matrix)
-        if not rows:
+    def numEnclaves(self, game_map: list[list[int]]) -> int:
+        row_count = len(game_map)
+        if not row_count:
             return 0
-        cols = len(matrix[0])
-        walkable_land = collections.deque()
-        for r in range(rows):
-            for c in range(cols):
-                is_border = r == 0 or r == rows - 1 or c == 0 or c == cols - 1
-                if matrix[r][c] == 1 and is_border:
-                    walkable_land.append((r, c))
-                    matrix[r][c] = 0
-        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        while walkable_land:
-            row, col = walkable_land.popleft()
-            for row_delta, col_delta in directions:
-                next_row, next_col = row + row_delta, col + col_delta
-                if 0 <= next_row < rows and 0 <= next_col < cols and matrix[next_row][next_col] == 1:
-                    matrix[next_row][next_col] = 0
-                    walkable_land.append((next_row, next_col))
-        isolated_cells = sum(map(sum, matrix))
-        return isolated_cells
+        col_count = len(game_map[0])
+        total_land_mass = sum(cell for row in game_map for cell in row)
+        explored_area = set()
+        def find_connected_land(r, c):
+            is_out_of_bounds = not (0 <= r < row_count and 0 <= c < col_count)
+            if is_out_of_bounds or game_map[r][c] == 0 or (r, c) in explored_area:
+                return 0
+            explored_area.add((r, c))
+            count = 1
+            count += find_connected_land(r + 1, c)
+            count += find_connected_land(r - 1, c)
+            count += find_connected_land(r, c + 1)
+            count += find_connected_land(r, c - 1)
+            return count
+        edge_land_mass = 0
+        for r_pos in range(row_count):
+            if game_map[r_pos][0] == 1 and (r_pos, 0) not in explored_area:
+                edge_land_mass += find_connected_land(r_pos, 0)
+            if game_map[r_pos][col_count - 1] == 1 and (r_pos, col_count - 1) not in explored_area:
+                edge_land_mass += find_connected_land(r_pos, col_count - 1)
+        for c_pos in range(col_count):
+            if game_map[0][c_pos] == 1 and (0, c_pos) not in explored_area:
+                edge_land_mass += find_connected_land(0, c_pos)
+            if game_map[row_count - 1][c_pos] == 1 and (row_count - 1, c_pos) not in explored_area:
+                edge_land_mass += find_connected_land(row_count - 1, c_pos)
+        return total_land_mass - edge_land_mass
