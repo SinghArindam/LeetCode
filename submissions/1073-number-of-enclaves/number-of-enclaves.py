@@ -83,34 +83,78 @@
 #         return isolated_cells
 
 # Approach 4
+# class Solution:
+#     def numEnclaves(self, game_map: list[list[int]]) -> int:
+#         row_count = len(game_map)
+#         if not row_count:
+#             return 0
+#         col_count = len(game_map[0])
+#         total_land_mass = sum(cell for row in game_map for cell in row)
+#         explored_area = set()
+#         def find_connected_land(r, c):
+#             is_out_of_bounds = not (0 <= r < row_count and 0 <= c < col_count)
+#             if is_out_of_bounds or game_map[r][c] == 0 or (r, c) in explored_area:
+#                 return 0
+#             explored_area.add((r, c))
+#             count = 1
+#             count += find_connected_land(r + 1, c)
+#             count += find_connected_land(r - 1, c)
+#             count += find_connected_land(r, c + 1)
+#             count += find_connected_land(r, c - 1)
+#             return count
+#         edge_land_mass = 0
+#         for r_pos in range(row_count):
+#             if game_map[r_pos][0] == 1 and (r_pos, 0) not in explored_area:
+#                 edge_land_mass += find_connected_land(r_pos, 0)
+#             if game_map[r_pos][col_count - 1] == 1 and (r_pos, col_count - 1) not in explored_area:
+#                 edge_land_mass += find_connected_land(r_pos, col_count - 1)
+#         for c_pos in range(col_count):
+#             if game_map[0][c_pos] == 1 and (0, c_pos) not in explored_area:
+#                 edge_land_mass += find_connected_land(0, c_pos)
+#             if game_map[row_count - 1][c_pos] == 1 and (row_count - 1, c_pos) not in explored_area:
+#                 edge_land_mass += find_connected_land(row_count - 1, c_pos)
+#         return total_land_mass - edge_land_mass
+
+# Approach 5
 class Solution:
-    def numEnclaves(self, game_map: list[list[int]]) -> int:
-        row_count = len(game_map)
-        if not row_count:
+    def numEnclaves(self, grid: list[list[int]]) -> int:
+        rows = len(grid)
+        if rows == 0:
             return 0
-        col_count = len(game_map[0])
-        total_land_mass = sum(cell for row in game_map for cell in row)
-        explored_area = set()
-        def find_connected_land(r, c):
-            is_out_of_bounds = not (0 <= r < row_count and 0 <= c < col_count)
-            if is_out_of_bounds or game_map[r][c] == 0 or (r, c) in explored_area:
-                return 0
-            explored_area.add((r, c))
-            count = 1
-            count += find_connected_land(r + 1, c)
-            count += find_connected_land(r - 1, c)
-            count += find_connected_land(r, c + 1)
-            count += find_connected_land(r, c - 1)
-            return count
-        edge_land_mass = 0
-        for r_pos in range(row_count):
-            if game_map[r_pos][0] == 1 and (r_pos, 0) not in explored_area:
-                edge_land_mass += find_connected_land(r_pos, 0)
-            if game_map[r_pos][col_count - 1] == 1 and (r_pos, col_count - 1) not in explored_area:
-                edge_land_mass += find_connected_land(r_pos, col_count - 1)
-        for c_pos in range(col_count):
-            if game_map[0][c_pos] == 1 and (0, c_pos) not in explored_area:
-                edge_land_mass += find_connected_land(0, c_pos)
-            if game_map[row_count - 1][c_pos] == 1 and (row_count - 1, c_pos) not in explored_area:
-                edge_land_mass += find_connected_land(row_count - 1, c_pos)
-        return total_land_mass - edge_land_mass
+        cols = len(grid[0])
+        parent = list(range(rows * cols + 1))
+        size = [1] * (rows * cols + 1)
+        border_node = rows * cols
+        def find_root(node_index):
+            if parent[node_index] == node_index:
+                return node_index
+            parent[node_index] = find_root(parent[node_index])
+            return parent[node_index]
+        def union_sets(first_node, second_node):
+            root_one = find_root(first_node)
+            root_two = find_root(second_node)
+            if root_one != root_two:
+                if size[root_one] < size[root_two]:
+                    root_one, root_two = root_two, root_one
+                parent[root_two] = root_one
+                size[root_one] += size[root_two]
+        for r_idx in range(rows):
+            for c_idx in range(cols):
+                if grid[r_idx][c_idx] == 1:
+                    cell_index = r_idx * cols + c_idx
+                    if r_idx == 0 or r_idx == rows - 1 or c_idx == 0 or c_idx == cols - 1:
+                        union_sets(cell_index, border_node)
+                    for dr, dc in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                        next_r, next_c = r_idx + dr, c_idx + dc
+                        if 0 <= next_r < rows and 0 <= next_c < cols and grid[next_r][next_c] == 1:
+                            neighbor_index = next_r * cols + next_c
+                            union_sets(cell_index, neighbor_index)
+        enclave_cell_count = 0
+        border_root = find_root(border_node)
+        for r_idx in range(rows):
+            for c_idx in range(cols):
+                if grid[r_idx][c_idx] == 1:
+                    cell_index = r_idx * cols + c_idx
+                    if find_root(cell_index) != border_root:
+                        enclave_cell_count += 1
+        return enclave_cell_count
