@@ -31,29 +31,29 @@
 #         return enclaved_land_cells
 
 # Approach 2
-# class Solution:
-#     def numEnclaves(self, grid: list[list[int]]) -> int:
-#         max_row = len(grid)
-#         if max_row == 0:
-#             return 0
-#         max_col = len(grid[0])
-#         def sink_island(row, col):
-#             is_invalid = not (0 <= row < max_row and 0 <= col < max_col)
-#             if is_invalid or grid[row][col] == 0:
-#                 return
-#             grid[row][col] = 0
-#             sink_island(row + 1, col)
-#             sink_island(row - 1, col)
-#             sink_island(row, col + 1)
-#             sink_island(row, col - 1)
-#         for r_idx in range(max_row):
-#             sink_island(r_idx, 0)
-#             sink_island(r_idx, max_col - 1)
-#         for c_idx in range(max_col):
-#             sink_island(0, c_idx)
-#             sink_island(max_row - 1, c_idx)
-#         enclave_count = sum(sum(row_data) for row_data in grid)
-#         return enclave_count
+class Solution:
+    def numEnclaves(self, grid: list[list[int]]) -> int:
+        max_row = len(grid)
+        if max_row == 0:
+            return 0
+        max_col = len(grid[0])
+        def sink_island(row, col):
+            is_invalid = not (0 <= row < max_row and 0 <= col < max_col)
+            if is_invalid or grid[row][col] == 0:
+                return
+            grid[row][col] = 0
+            sink_island(row + 1, col)
+            sink_island(row - 1, col)
+            sink_island(row, col + 1)
+            sink_island(row, col - 1)
+        for r_idx in range(max_row):
+            sink_island(r_idx, 0)
+            sink_island(r_idx, max_col - 1)
+        for c_idx in range(max_col):
+            sink_island(0, c_idx)
+            sink_island(max_row - 1, c_idx)
+        enclave_count = sum(sum(row_data) for row_data in grid)
+        return enclave_count
 
 
 # Approach 3
@@ -116,45 +116,45 @@
 #         return total_land_mass - edge_land_mass
 
 # Approach 5
-class Solution:
-    def numEnclaves(self, grid: list[list[int]]) -> int:
-        rows = len(grid)
-        if rows == 0:
-            return 0
-        cols = len(grid[0])
-        parent = list(range(rows * cols + 1))
-        size = [1] * (rows * cols + 1)
-        border_node = rows * cols
-        def find_root(node_index):
-            if parent[node_index] == node_index:
-                return node_index
-            parent[node_index] = find_root(parent[node_index])
-            return parent[node_index]
-        def union_sets(first_node, second_node):
-            root_one = find_root(first_node)
-            root_two = find_root(second_node)
-            if root_one != root_two:
-                if size[root_one] < size[root_two]:
-                    root_one, root_two = root_two, root_one
-                parent[root_two] = root_one
-                size[root_one] += size[root_two]
-        for r_idx in range(rows):
-            for c_idx in range(cols):
-                if grid[r_idx][c_idx] == 1:
-                    cell_index = r_idx * cols + c_idx
-                    if r_idx == 0 or r_idx == rows - 1 or c_idx == 0 or c_idx == cols - 1:
-                        union_sets(cell_index, border_node)
-                    for dr, dc in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
-                        next_r, next_c = r_idx + dr, c_idx + dc
-                        if 0 <= next_r < rows and 0 <= next_c < cols and grid[next_r][next_c] == 1:
-                            neighbor_index = next_r * cols + next_c
-                            union_sets(cell_index, neighbor_index)
-        enclave_cell_count = 0
-        border_root = find_root(border_node)
-        for r_idx in range(rows):
-            for c_idx in range(cols):
-                if grid[r_idx][c_idx] == 1:
-                    cell_index = r_idx * cols + c_idx
-                    if find_root(cell_index) != border_root:
-                        enclave_cell_count += 1
-        return enclave_cell_count
+# class Solution:
+#     def numEnclaves(self, grid: list[list[int]]) -> int:
+#         rows = len(grid)
+#         if rows == 0:
+#             return 0
+#         cols = len(grid[0])
+#         parent = list(range(rows * cols + 1))
+#         size = [1] * (rows * cols + 1)
+#         border_node = rows * cols
+#         def find_root(node_index):
+#             if parent[node_index] == node_index:
+#                 return node_index
+#             parent[node_index] = find_root(parent[node_index])
+#             return parent[node_index]
+#         def union_sets(first_node, second_node):
+#             root_one = find_root(first_node)
+#             root_two = find_root(second_node)
+#             if root_one != root_two:
+#                 if size[root_one] < size[root_two]:
+#                     root_one, root_two = root_two, root_one
+#                 parent[root_two] = root_one
+#                 size[root_one] += size[root_two]
+#         for r_idx in range(rows):
+#             for c_idx in range(cols):
+#                 if grid[r_idx][c_idx] == 1:
+#                     cell_index = r_idx * cols + c_idx
+#                     if r_idx == 0 or r_idx == rows - 1 or c_idx == 0 or c_idx == cols - 1:
+#                         union_sets(cell_index, border_node)
+#                     for dr, dc in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+#                         next_r, next_c = r_idx + dr, c_idx + dc
+#                         if 0 <= next_r < rows and 0 <= next_c < cols and grid[next_r][next_c] == 1:
+#                             neighbor_index = next_r * cols + next_c
+#                             union_sets(cell_index, neighbor_index)
+#         enclave_cell_count = 0
+#         border_root = find_root(border_node)
+#         for r_idx in range(rows):
+#             for c_idx in range(cols):
+#                 if grid[r_idx][c_idx] == 1:
+#                     cell_index = r_idx * cols + c_idx
+#                     if find_root(cell_index) != border_root:
+#                         enclave_cell_count += 1
+#         return enclave_cell_count
