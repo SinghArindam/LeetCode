@@ -31,26 +31,53 @@
 #         return enclaved_land_cells
 
 # Approach 2
+# class Solution:
+#     def numEnclaves(self, grid: list[list[int]]) -> int:
+#         max_row = len(grid)
+#         if max_row == 0:
+#             return 0
+#         max_col = len(grid[0])
+#         def sink_island(row, col):
+#             is_invalid = not (0 <= row < max_row and 0 <= col < max_col)
+#             if is_invalid or grid[row][col] == 0:
+#                 return
+#             grid[row][col] = 0
+#             sink_island(row + 1, col)
+#             sink_island(row - 1, col)
+#             sink_island(row, col + 1)
+#             sink_island(row, col - 1)
+#         for r_idx in range(max_row):
+#             sink_island(r_idx, 0)
+#             sink_island(r_idx, max_col - 1)
+#         for c_idx in range(max_col):
+#             sink_island(0, c_idx)
+#             sink_island(max_row - 1, c_idx)
+#         enclave_count = sum(sum(row_data) for row_data in grid)
+#         return enclave_count
+
+
+# Approach 3
+import collections
 class Solution:
-    def numEnclaves(self, grid: list[list[int]]) -> int:
-        max_row = len(grid)
-        if max_row == 0:
+    def numEnclaves(self, matrix: list[list[int]]) -> int:
+        rows = len(matrix)
+        if not rows:
             return 0
-        max_col = len(grid[0])
-        def sink_island(row, col):
-            is_invalid = not (0 <= row < max_row and 0 <= col < max_col)
-            if is_invalid or grid[row][col] == 0:
-                return
-            grid[row][col] = 0
-            sink_island(row + 1, col)
-            sink_island(row - 1, col)
-            sink_island(row, col + 1)
-            sink_island(row, col - 1)
-        for r_idx in range(max_row):
-            sink_island(r_idx, 0)
-            sink_island(r_idx, max_col - 1)
-        for c_idx in range(max_col):
-            sink_island(0, c_idx)
-            sink_island(max_row - 1, c_idx)
-        enclave_count = sum(sum(row_data) for row_data in grid)
-        return enclave_count
+        cols = len(matrix[0])
+        walkable_land = collections.deque()
+        for r in range(rows):
+            for c in range(cols):
+                is_border = r == 0 or r == rows - 1 or c == 0 or c == cols - 1
+                if matrix[r][c] == 1 and is_border:
+                    walkable_land.append((r, c))
+                    matrix[r][c] = 0
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        while walkable_land:
+            row, col = walkable_land.popleft()
+            for row_delta, col_delta in directions:
+                next_row, next_col = row + row_delta, col + col_delta
+                if 0 <= next_row < rows and 0 <= next_col < cols and matrix[next_row][next_col] == 1:
+                    matrix[next_row][next_col] = 0
+                    walkable_land.append((next_row, next_col))
+        isolated_cells = sum(map(sum, matrix))
+        return isolated_cells
