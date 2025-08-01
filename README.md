@@ -49,6 +49,9 @@
 ### [1039] Find The Town Judge
 - [Complete Notes](Notes/1039-find-the-town-judge_Notes.md) | [Short Notes](Notes/Short_Notes/1039-find-the-town-judge_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/1039-find-the-town-judge_Atomic_Notes.md)
 
+### [1073] Number Of Enclaves
+- [Complete Notes](Notes/1073-number-of-enclaves_Notes.md) | [Short Notes](Notes/Short_Notes/1073-number-of-enclaves_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/1073-number-of-enclaves_Atomic_Notes.md)
+
 ### [1160] Letter Tile Possibilities
 - [Complete Notes](Notes/1160-letter-tile-possibilities_Notes.md) | [Short Notes](Notes/Short_Notes/1160-letter-tile-possibilities_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/1160-letter-tile-possibilities_Atomic_Notes.md)
 
@@ -125,6 +128,7 @@
 │   ├── Atomic_Notes/
 │   │   ├── 1036-rotting-oranges_Atomic_Notes.md (5.26 KB) [.md]
 │   │   ├── 1039-find-the-town-judge_Atomic_Notes.md (8.88 KB) [.md]
+│   │   ├── 1073-number-of-enclaves_Atomic_Notes.md (6.49 KB) [.md]
 │   │   ├── 1160-letter-tile-possibilities_Atomic_Notes.md (6.9 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Atomic_Notes.md (6.05 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
@@ -165,6 +169,7 @@
 │   ├── Short_Notes/
 │   │   ├── 1036-rotting-oranges_Short_Notes.md (3.53 KB) [.md]
 │   │   ├── 1039-find-the-town-judge_Short_Notes.md (3.13 KB) [.md]
+│   │   ├── 1073-number-of-enclaves_Short_Notes.md (3.02 KB) [.md]
 │   │   ├── 1160-letter-tile-possibilities_Short_Notes.md (2.75 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Short_Notes.md (2.59 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
@@ -204,6 +209,7 @@
 │   │   └── 88-merge-sorted-array_Short_Notes.md (2.99 KB) [.md]
 │   ├── 1036-rotting-oranges_Notes.md (38.4 KB) [.md]
 │   ├── 1039-find-the-town-judge_Notes.md (22.31 KB) [.md]
+│   ├── 1073-number-of-enclaves_Notes.md (23.86 KB) [.md]
 │   ├── 1160-letter-tile-possibilities_Notes.md (23.52 KB) [.md]
 │   ├── 121-best-time-to-buy-and-sell-stock_Notes.md (17.02 KB) [.md]
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
@@ -251,6 +257,9 @@
 │   ├── 1039-find-the-town-judge/
 │   │   ├── README.md (1.98 KB) [.md]
 │   │   └── find-the-town-judge.py (1.56 KB) [.py]
+│   ├── 1073-number-of-enclaves/
+│   │   ├── README.md (1.78 KB) [.md]
+│   │   └── number-of-enclaves.py (7.44 KB) [.py]
 │   ├── 1160-letter-tile-possibilities/
 │   │   ├── README.md (1.29 KB) [.md]
 │   │   └── letter-tile-possibilities.cpp (898 bytes) [.cpp]
@@ -366,24 +375,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (27.99 KB) [.md]
-├── TREE_FILE.txt (17.33 KB) [.txt]
+├── README.md (28.59 KB) [.md]
+├── TREE_FILE.txt (17.69 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (62.75 KB) [.json]
+├── file_structure.json (64.24 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 207
-Total Size: 1.49 MB
+Total Files: 212
+Total Size: 1.54 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 159 files
-  .py: 29 files
+  .md: 163 files
+  .py: 30 files
   .pyc: 2 files
   .txt: 2 files
 ```
