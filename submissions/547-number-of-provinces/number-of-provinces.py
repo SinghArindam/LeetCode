@@ -47,24 +47,53 @@
 
 
 # Approach 3
-import collections
+# import collections
 
+# class Solution:
+#     def findCircleNum(self, isConnected: list[list[int]]) -> int:
+#         num_cities = len(isConnected)
+#         visited = set()
+#         num_provinces = 0
+
+#         for i in range(num_cities):
+#             if i not in visited:
+#                 num_provinces += 1
+#                 queue = collections.deque([i])
+#                 visited.add(i)
+#                 while queue:
+#                     city = queue.popleft()
+#                     for neighbor, is_linked in enumerate(isConnected[city]):
+#                         if is_linked and neighbor not in visited:
+#                             visited.add(neighbor)
+#                             queue.append(neighbor)
+        
+#         return num_provinces
+
+
+# Approach 4
 class Solution:
     def findCircleNum(self, isConnected: list[list[int]]) -> int:
         num_cities = len(isConnected)
-        visited = set()
-        num_provinces = 0
+        parent = list(range(num_cities))
+        num_provinces = num_cities
+
+        def find_root(i):
+            if parent[i] == i:
+                return i
+            parent[i] = find_root(parent[i])
+            return parent[i]
+
+        def union_sets(i, j):
+            nonlocal num_provinces
+            root_i = find_root(i)
+            root_j = find_root(j)
+            if root_i != root_j:
+                parent[root_j] = root_i
+                num_provinces -= 1
 
         for i in range(num_cities):
-            if i not in visited:
-                num_provinces += 1
-                queue = collections.deque([i])
-                visited.add(i)
-                while queue:
-                    city = queue.popleft()
-                    for neighbor, is_linked in enumerate(isConnected[city]):
-                        if is_linked and neighbor not in visited:
-                            visited.add(neighbor)
-                            queue.append(neighbor)
+            for j in range(i + 1, num_cities):
+                if isConnected[i][j] == 1:
+                    union_sets(i, j)
         
         return num_provinces
