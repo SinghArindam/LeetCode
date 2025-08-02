@@ -100,6 +100,36 @@
 
 
 # Approach 5
+# import collections
+
+# class Solution:
+#     def findCircleNum(self, isConnected: list[list[int]]) -> int:
+#         num_cities = len(isConnected)
+#         adj_list = collections.defaultdict(list)
+#         for i in range(num_cities):
+#             for j in range(i + 1, num_cities):
+#                 if isConnected[i][j]:
+#                     adj_list[i].append(j)
+#                     adj_list[j].append(i)
+
+#         visited = set()
+#         num_provinces = 0
+
+#         def dfs(city_index):
+#             visited.add(city_index)
+#             for neighbor in adj_list[city_index]:
+#                 if neighbor not in visited:
+#                     dfs(neighbor)
+
+#         for i in range(num_cities):
+#             if i not in visited:
+#                 num_provinces += 1
+#                 dfs(i)
+        
+#         return num_provinces
+
+
+# Approach 6
 import collections
 
 class Solution:
@@ -111,19 +141,19 @@ class Solution:
                 if isConnected[i][j]:
                     adj_list[i].append(j)
                     adj_list[j].append(i)
-
+    
         visited = set()
         num_provinces = 0
-
-        def dfs(city_index):
-            visited.add(city_index)
-            for neighbor in adj_list[city_index]:
-                if neighbor not in visited:
-                    dfs(neighbor)
-
         for i in range(num_cities):
             if i not in visited:
                 num_provinces += 1
-                dfs(i)
+                queue = collections.deque([i])
+                visited.add(i)
+                while queue:
+                    city = queue.popleft()
+                    for neighbor in adj_list[city]:
+                        if neighbor not in visited:
+                            visited.add(neighbor)
+                            queue.append(neighbor)
         
         return num_provinces
