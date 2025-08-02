@@ -161,7 +161,7 @@
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
 │   │   ├── 542-01-matrix_Atomic_Notes.md (6.35 KB) [.md]
-│   │   ├── 547-number-of-provinces_Atomic_Notes.md (7.42 KB) [.md]
+│   │   ├── 547-number-of-provinces_Atomic_Notes.md (6.15 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
 │   │   ├── 733-flood-fill_Atomic_Notes.md (5.29 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Atomic_Notes.md (6.42 KB) [.md]
@@ -202,7 +202,7 @@
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
 │   │   ├── 542-01-matrix_Short_Notes.md (3.11 KB) [.md]
-│   │   ├── 547-number-of-provinces_Short_Notes.md (3.27 KB) [.md]
+│   │   ├── 547-number-of-provinces_Short_Notes.md (3.2 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
 │   │   ├── 733-flood-fill_Short_Notes.md (3.45 KB) [.md]
 │   │   ├── 80-remove-duplicates-from-sorted-array-ii_Short_Notes.md (2.94 KB) [.md]
@@ -242,7 +242,7 @@
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
 │   ├── 542-01-matrix_Notes.md (20.99 KB) [.md]
-│   ├── 547-number-of-provinces_Notes.md (20.41 KB) [.md]
+│   ├── 547-number-of-provinces_Notes.md (24.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
 │   ├── 733-flood-fill_Notes.md (21.27 KB) [.md]
 │   ├── 80-remove-duplicates-from-sorted-array-ii_Notes.md (19.57 KB) [.md]
@@ -362,7 +362,7 @@
 │   │   └── README.md (1.62 KB) [.md]
 │   ├── 547-number-of-provinces/
 │   │   ├── README.md (1.91 KB) [.md]
-│   │   └── number-of-provinces.py (514 bytes) [.py]
+│   │   └── number-of-provinces.py (4.74 KB) [.py]
 │   ├── 55-jump-game/
 │   │   ├── README.md (1.24 KB) [.md]
 │   │   └── jump-game.py (363 bytes) [.py]
@@ -375,18 +375,18 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (28.59 KB) [.md]
-├── TREE_FILE.txt (17.69 KB) [.txt]
+├── README.md (29.19 KB) [.md]
+├── TREE_FILE.txt (18.06 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (64.24 KB) [.json]
+├── file_structure.json (65.73 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
 Total Files: 212
-Total Size: 1.54 MB
+Total Size: 1.55 MB
 
 Files by Extension:
   .cpp: 14 files
