@@ -1,23 +1,23 @@
 # Approach 1
-# from typing import List
+from typing import List
 
-# class Solution:
-#     def findCircleNum(self, isConnected: List[List[int]]) -> int:
-#         n = len(isConnected)
-#         visited = set()
-#         count = 0
-#         def dfs(node):
-#             visited.add(node)
-#             for i in range(n):
-#                 if isConnected[node][i] == 1 and i not in visited:
-#                     dfs(i)
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        n = len(isConnected)
+        visited = set()
+        count = 0
+        def dfs(node):
+            visited.add(node)
+            for i in range(n):
+                if isConnected[node][i] == 1 and i not in visited:
+                    dfs(i)
 
-#         for i in range(n):
-#             if i not in visited:
-#                 count += 1
-#                 dfs(i)
+        for i in range(n):
+            if i not in visited:
+                count += 1
+                dfs(i)
         
-#         return count
+        return count
 
 
 
@@ -130,30 +130,30 @@
 
 
 # Approach 6
-import collections
+# import collections
 
-class Solution:
-    def findCircleNum(self, isConnected: list[list[int]]) -> int:
-        num_cities = len(isConnected)
-        adj_list = collections.defaultdict(list)
-        for i in range(num_cities):
-            for j in range(i + 1, num_cities):
-                if isConnected[i][j]:
-                    adj_list[i].append(j)
-                    adj_list[j].append(i)
+# class Solution:
+#     def findCircleNum(self, isConnected: list[list[int]]) -> int:
+#         num_cities = len(isConnected)
+#         adj_list = collections.defaultdict(list)
+#         for i in range(num_cities):
+#             for j in range(i + 1, num_cities):
+#                 if isConnected[i][j]:
+#                     adj_list[i].append(j)
+#                     adj_list[j].append(i)
     
-        visited = set()
-        num_provinces = 0
-        for i in range(num_cities):
-            if i not in visited:
-                num_provinces += 1
-                queue = collections.deque([i])
-                visited.add(i)
-                while queue:
-                    city = queue.popleft()
-                    for neighbor in adj_list[city]:
-                        if neighbor not in visited:
-                            visited.add(neighbor)
-                            queue.append(neighbor)
+#         visited = set()
+#         num_provinces = 0
+#         for i in range(num_cities):
+#             if i not in visited:
+#                 num_provinces += 1
+#                 queue = collections.deque([i])
+#                 visited.add(i)
+#                 while queue:
+#                     city = queue.popleft()
+#                     for neighbor in adj_list[city]:
+#                         if neighbor not in visited:
+#                             visited.add(neighbor)
+#                             queue.append(neighbor)
         
-        return num_provinces
+#         return num_provinces
