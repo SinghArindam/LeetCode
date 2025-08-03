@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 67312,
-      "kb": 65.73,
+      "bytes": 67313,
+      "kb": 65.74,
       "mb": 0.06,
       "gb": 0.0
     },
-    "modified": "2025-08-01T23:03:43.386393",
+    "modified": "2025-08-02T23:26:58.832745",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 29894,
+      "bytes": 29891,
       "kb": 29.19,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-01T23:03:43.410396",
+    "modified": "2025-08-02T23:26:58.863959",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 18489,
-      "kb": 18.06,
+      "bytes": 18486,
+      "kb": 18.05,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-01T23:03:43.386393",
+    "modified": "2025-08-02T23:26:58.832745",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -501,6 +501,18 @@
     },
     "modified": "2025-07-07T20:45:07.114014",
     "created": "2025-07-07T20:45:07.114014",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\3600-find-the-k-th-character-in-string-game-i_Notes.md",
+    "size": {
+      "bytes": 21365,
+      "kb": 20.86,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-08-04T00:30:18.852774",
+    "created": "2025-08-04T00:30:18.851995",
     "extension": ".md"
   },
   {
@@ -984,6 +996,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md",
+    "size": {
+      "bytes": 6606,
+      "kb": 6.45,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-04T00:30:52.625377",
+    "created": "2025-08-04T00:30:52.625377",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\542-01-matrix_Atomic_Notes.md",
     "size": {
       "bytes": 6504,
@@ -1461,6 +1485,18 @@
     },
     "modified": "2025-07-07T20:45:07.153636",
     "created": "2025-07-07T20:45:07.153277",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\3600-find-the-k-th-character-in-string-game-i_Short_Notes.md",
+    "size": {
+      "bytes": 3034,
+      "kb": 2.96,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-04T00:30:30.589797",
+    "created": "2025-08-04T00:30:30.588798",
     "extension": ".md"
   },
   {
@@ -2373,6 +2409,30 @@
     },
     "modified": "2025-07-07T20:45:07.199380",
     "created": "2025-07-07T20:45:07.199380",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\3600-find-the-k-th-character-in-string-game-i\\find-the-k-th-character-in-string-game-i.py",
+    "size": {
+      "bytes": 379,
+      "kb": 0.37,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-04T00:28:06.886715",
+    "created": "2025-08-04T00:28:06.886715",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\3600-find-the-k-th-character-in-string-game-i\\README.md",
+    "size": {
+      "bytes": 2318,
+      "kb": 2.26,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-04T00:28:06.850776",
+    "created": "2025-08-04T00:28:06.850776",
     "extension": ".md"
   },
   {

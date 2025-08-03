@@ -121,6 +121,9 @@
 ### [3483] Alternating Groups Ii
 - [Complete Notes](Notes/3483-alternating-groups-ii_Notes.md) | [Short Notes](Notes/Short_Notes/3483-alternating-groups-ii_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/3483-alternating-groups-ii_Atomic_Notes.md)
 
+### [3600] Find The K Th Character In String Game I
+- [Complete Notes](Notes/3600-find-the-k-th-character-in-string-game-i_Notes.md) | [Short Notes](Notes/Short_Notes/3600-find-the-k-th-character-in-string-game-i_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md)
+
 
 ## File Structure
 ```txt./
@@ -160,6 +163,7 @@
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Atomic_Notes.md (5.97 KB) [.md]
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
+│   │   ├── 3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md (6.45 KB) [.md]
 │   │   ├── 542-01-matrix_Atomic_Notes.md (6.35 KB) [.md]
 │   │   ├── 547-number-of-provinces_Atomic_Notes.md (6.15 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
@@ -201,6 +205,7 @@
 │   │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Short_Notes.md (3.33 KB) [.md]
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
+│   │   ├── 3600-find-the-k-th-character-in-string-game-i_Short_Notes.md (2.96 KB) [.md]
 │   │   ├── 542-01-matrix_Short_Notes.md (3.11 KB) [.md]
 │   │   ├── 547-number-of-provinces_Short_Notes.md (3.2 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
@@ -241,6 +246,7 @@
 │   ├── 3434-find-the-number-of-distinct-colors-among-the-balls_Notes.md (17.5 KB) [.md]
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
+│   ├── 3600-find-the-k-th-character-in-string-game-i_Notes.md (20.86 KB) [.md]
 │   ├── 542-01-matrix_Notes.md (20.99 KB) [.md]
 │   ├── 547-number-of-provinces_Notes.md (24.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
@@ -357,6 +363,9 @@
 │   ├── 3483-alternating-groups-ii/
 │   │   ├── README.md (5.14 KB) [.md]
 │   │   └── alternating-groups-ii.cpp (1.18 KB) [.cpp]
+│   ├── 3600-find-the-k-th-character-in-string-game-i/
+│   │   ├── README.md (2.26 KB) [.md]
+│   │   └── find-the-k-th-character-in-string-game-i.py (379 bytes) [.py]
 │   ├── 542-01-matrix/
 │   │   ├── 01-matrix.py (2.02 KB) [.py]
 │   │   └── README.md (1.62 KB) [.md]
@@ -376,23 +385,23 @@
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
 ├── README.md (29.19 KB) [.md]
-├── TREE_FILE.txt (18.06 KB) [.txt]
+├── TREE_FILE.txt (18.05 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (65.73 KB) [.json]
+├── file_structure.json (65.74 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 212
-Total Size: 1.55 MB
+Total Files: 217
+Total Size: 1.58 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 163 files
-  .py: 30 files
+  .md: 167 files
+  .py: 31 files
   .pyc: 2 files
   .txt: 2 files
 ```
