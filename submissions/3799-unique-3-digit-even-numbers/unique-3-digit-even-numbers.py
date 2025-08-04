@@ -37,9 +37,28 @@ class Solution:
         # return ans
 
         # Approach 4
+        # s = set()
+        # for p in itertools.permutations(digits, 3):
+        #     if p[0] != 0 and p[2] % 2 == 0:
+        #         num = p[0] * 100 + p[1] * 10 + p[2]
+        #         s.add(num)
+        # return len(s)
+
+        # Approach 5
         s = set()
-        for p in itertools.permutations(digits, 3):
-            if p[0] != 0 and p[2] % 2 == 0:
-                num = p[0] * 100 + p[1] * 10 + p[2]
-                s.add(num)
+        n = len(digits)
+        
+        def find(path, used_mask):
+            if len(path) == 3:
+                if path[0] != 0 and path[2] % 2 == 0:
+                    s.add(path[0] * 100 + path[1] * 10 + path[2])
+                return
+
+            for i in range(n):
+                if not used_mask[i]:
+                    used_mask[i] = True
+                    find(path + [digits[i]], used_mask)
+                    used_mask[i] = False
+
+        find([], [False] * n)
         return len(s)
