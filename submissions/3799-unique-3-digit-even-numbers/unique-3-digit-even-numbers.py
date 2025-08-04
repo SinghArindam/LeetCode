@@ -64,4 +64,17 @@ class Solution:
         # return len(s)
 
         # Approach 6
-        return len({i * 100 + j * 10 + k for i, j, k in itertools.permutations(digits, 3) if i != 0 and k % 2 == 0})
+        # return len({i * 100 + j * 10 + k for i, j, k in itertools.permutations(digits, 3) if i != 0 and k % 2 == 0})
+
+        # Approach 7
+        n = len(digits)
+        s = set()
+        for i in range(n):
+            for j in range(n):
+                for k in range(n):
+                    if i == j or j == k or i == k:
+                        continue
+                    if digits[i] != 0 and digits[k] % 2 == 0:
+                        num = digits[i] * 100 + digits[j] * 10 + digits[k]
+                        s.add(num)
+        return len(s)
