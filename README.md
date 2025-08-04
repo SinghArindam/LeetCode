@@ -124,6 +124,9 @@
 ### [3600] Find The K Th Character In String Game I
 - [Complete Notes](Notes/3600-find-the-k-th-character-in-string-game-i_Notes.md) | [Short Notes](Notes/Short_Notes/3600-find-the-k-th-character-in-string-game-i_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md)
 
+### [3799] Unique 3 Digit Even Numbers
+- [Complete Notes](Notes/3799-unique-3-digit-even-numbers_Notes.md) | [Short Notes](Notes/Short_Notes/3799-unique-3-digit-even-numbers_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/3799-unique-3-digit-even-numbers_Atomic_Notes.md)
+
 
 ## File Structure
 ```txt./
@@ -164,6 +167,7 @@
 │   │   ├── 3447-clear-digits_Atomic_Notes.md (5.95 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
 │   │   ├── 3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md (6.45 KB) [.md]
+│   │   ├── 3799-unique-3-digit-even-numbers_Atomic_Notes.md (7.13 KB) [.md]
 │   │   ├── 542-01-matrix_Atomic_Notes.md (6.35 KB) [.md]
 │   │   ├── 547-number-of-provinces_Atomic_Notes.md (6.15 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
@@ -206,6 +210,7 @@
 │   │   ├── 3447-clear-digits_Short_Notes.md (2.46 KB) [.md]
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
 │   │   ├── 3600-find-the-k-th-character-in-string-game-i_Short_Notes.md (2.96 KB) [.md]
+│   │   ├── 3799-unique-3-digit-even-numbers_Short_Notes.md (3.68 KB) [.md]
 │   │   ├── 542-01-matrix_Short_Notes.md (3.11 KB) [.md]
 │   │   ├── 547-number-of-provinces_Short_Notes.md (3.2 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
@@ -247,6 +252,7 @@
 │   ├── 3447-clear-digits_Notes.md (20.16 KB) [.md]
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
 │   ├── 3600-find-the-k-th-character-in-string-game-i_Notes.md (20.86 KB) [.md]
+│   ├── 3799-unique-3-digit-even-numbers_Notes.md (27.47 KB) [.md]
 │   ├── 542-01-matrix_Notes.md (20.99 KB) [.md]
 │   ├── 547-number-of-provinces_Notes.md (24.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
@@ -366,6 +372,9 @@
 │   ├── 3600-find-the-k-th-character-in-string-game-i/
 │   │   ├── README.md (2.26 KB) [.md]
 │   │   └── find-the-k-th-character-in-string-game-i.py (379 bytes) [.py]
+│   ├── 3799-unique-3-digit-even-numbers/
+│   │   ├── README.md (2.25 KB) [.md]
+│   │   └── unique-3-digit-even-numbers.py (2.67 KB) [.py]
 │   ├── 542-01-matrix/
 │   │   ├── 01-matrix.py (2.02 KB) [.py]
 │   │   └── README.md (1.62 KB) [.md]
@@ -384,24 +393,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (29.19 KB) [.md]
-├── TREE_FILE.txt (18.05 KB) [.txt]
+├── README.md (29.99 KB) [.md]
+├── TREE_FILE.txt (18.53 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (65.74 KB) [.json]
+├── file_structure.json (67.36 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 217
-Total Size: 1.58 MB
+Total Files: 222
+Total Size: 1.62 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 167 files
-  .py: 31 files
+  .md: 171 files
+  .py: 32 files
   .pyc: 2 files
   .txt: 2 files
 ```
