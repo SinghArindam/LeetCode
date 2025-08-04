@@ -28,10 +28,18 @@ class Solution:
         # return ans
 
         # Approach 3
-        c = collections.Counter(digits)
-        ans = 0
-        for n in range(100, 1000, 2):
-            n_c = collections.Counter(int(digit) for digit in str(n))
-            if all(n_c[k] <= c.get(k, 0) for k in n_c):
-                ans += 1
-        return ans
+        # c = collections.Counter(digits)
+        # ans = 0
+        # for n in range(100, 1000, 2):
+        #     n_c = collections.Counter(int(digit) for digit in str(n))
+        #     if all(n_c[k] <= c.get(k, 0) for k in n_c):
+        #         ans += 1
+        # return ans
+
+        # Approach 4
+        s = set()
+        for p in itertools.permutations(digits, 3):
+            if p[0] != 0 and p[2] % 2 == 0:
+                num = p[0] * 100 + p[1] * 10 + p[2]
+                s.add(num)
+        return len(s)
