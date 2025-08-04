@@ -45,20 +45,23 @@ class Solution:
         # return len(s)
 
         # Approach 5
-        s = set()
-        n = len(digits)
+        # s = set()
+        # n = len(digits)
         
-        def find(path, used_mask):
-            if len(path) == 3:
-                if path[0] != 0 and path[2] % 2 == 0:
-                    s.add(path[0] * 100 + path[1] * 10 + path[2])
-                return
+        # def find(path, used_mask):
+        #     if len(path) == 3:
+        #         if path[0] != 0 and path[2] % 2 == 0:
+        #             s.add(path[0] * 100 + path[1] * 10 + path[2])
+        #         return
 
-            for i in range(n):
-                if not used_mask[i]:
-                    used_mask[i] = True
-                    find(path + [digits[i]], used_mask)
-                    used_mask[i] = False
+        #     for i in range(n):
+        #         if not used_mask[i]:
+        #             used_mask[i] = True
+        #             find(path + [digits[i]], used_mask)
+        #             used_mask[i] = False
 
-        find([], [False] * n)
-        return len(s)
+        # find([], [False] * n)
+        # return len(s)
+
+        # Approach 6
+        return len({i * 100 + j * 10 + k for i, j, k in itertools.permutations(digits, 3) if i != 0 and k % 2 == 0})
