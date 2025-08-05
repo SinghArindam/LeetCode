@@ -82,6 +82,9 @@
 ### [2021] Remove All Occurrences Of A Substring
 - [Complete Notes](Notes/2021-remove-all-occurrences-of-a-substring_Notes.md) | [Short Notes](Notes/Short_Notes/2021-remove-all-occurrences-of-a-substring_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/2021-remove-all-occurrences-of-a-substring_Atomic_Notes.md)
 
+### [2050] Count Good Numbers
+- [Complete Notes](Notes/2050-count-good-numbers_Notes.md) | [Short Notes](Notes/Short_Notes/2050-count-good-numbers_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/2050-count-good-numbers_Atomic_Notes.md)
+
 ### [2107] Find Unique Binary String
 - [Complete Notes](Notes/2107-find-unique-binary-string_Notes.md) | [Short Notes](Notes/Short_Notes/2107-find-unique-binary-string_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/2107-find-unique-binary-string_Atomic_Notes.md)
 
@@ -151,6 +154,7 @@
 │   │   ├── 1915-check-if-one-string-swap-can-make-strings-equal_Atomic_Notes.md (8.49 KB) [.md]
 │   │   ├── 1927-maximum-ascending-subarray-sum_Atomic_Notes.md (4.94 KB) [.md]
 │   │   ├── 2021-remove-all-occurrences-of-a-substring_Atomic_Notes.md (7.0 KB) [.md]
+│   │   ├── 2050-count-good-numbers_Atomic_Notes.md (6.42 KB) [.md]
 │   │   ├── 2107-find-unique-binary-string_Atomic_Notes.md (8.54 KB) [.md]
 │   │   ├── 2434-design-a-number-container-system_Atomic_Notes.md (6.5 KB) [.md]
 │   │   ├── 2448-count-number-of-bad-pairs_Atomic_Notes.md (4.6 KB) [.md]
@@ -194,6 +198,7 @@
 │   │   ├── 1915-check-if-one-string-swap-can-make-strings-equal_Short_Notes.md (3.17 KB) [.md]
 │   │   ├── 1927-maximum-ascending-subarray-sum_Short_Notes.md (2.96 KB) [.md]
 │   │   ├── 2021-remove-all-occurrences-of-a-substring_Short_Notes.md (3.26 KB) [.md]
+│   │   ├── 2050-count-good-numbers_Short_Notes.md (2.77 KB) [.md]
 │   │   ├── 2107-find-unique-binary-string_Short_Notes.md (2.66 KB) [.md]
 │   │   ├── 2434-design-a-number-container-system_Short_Notes.md (3.36 KB) [.md]
 │   │   ├── 2448-count-number-of-bad-pairs_Short_Notes.md (3.66 KB) [.md]
@@ -236,6 +241,7 @@
 │   ├── 1915-check-if-one-string-swap-can-make-strings-equal_Notes.md (19.54 KB) [.md]
 │   ├── 1927-maximum-ascending-subarray-sum_Notes.md (17.24 KB) [.md]
 │   ├── 2021-remove-all-occurrences-of-a-substring_Notes.md (18.75 KB) [.md]
+│   ├── 2050-count-good-numbers_Notes.md (18.34 KB) [.md]
 │   ├── 2107-find-unique-binary-string_Notes.md (14.28 KB) [.md]
 │   ├── 2434-design-a-number-container-system_Notes.md (21.63 KB) [.md]
 │   ├── 2448-count-number-of-bad-pairs_Notes.md (18.71 KB) [.md]
@@ -324,6 +330,9 @@
 │   ├── 2021-remove-all-occurrences-of-a-substring/
 │   │   ├── README.md (2.46 KB) [.md]
 │   │   └── remove-all-occurrences-of-a-substring.cpp (501 bytes) [.cpp]
+│   ├── 2050-count-good-numbers/
+│   │   ├── README.md (1.87 KB) [.md]
+│   │   └── count-good-numbers.py (2.7 KB) [.py]
 │   ├── 2107-find-unique-binary-string/
 │   │   ├── README.md (1.83 KB) [.md]
 │   │   └── find-unique-binary-string.cpp (347 bytes) [.cpp]
@@ -393,24 +402,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (29.99 KB) [.md]
-├── TREE_FILE.txt (18.53 KB) [.txt]
+├── README.md (30.68 KB) [.md]
+├── TREE_FILE.txt (18.94 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (67.36 KB) [.json]
+├── file_structure.json (68.91 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 222
-Total Size: 1.62 MB
+Total Files: 227
+Total Size: 1.66 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 171 files
-  .py: 32 files
+  .md: 175 files
+  .py: 33 files
   .pyc: 2 files
   .txt: 2 files
 ```
