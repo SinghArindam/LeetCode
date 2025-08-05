@@ -30,18 +30,18 @@ class Solution:
         # return (power(5, even, mod) * power(4, odd, mod)) % mod
 
         # Approach 4
-        # mod = 10**9 + 7
-        # even = (n+1)//2
-        # odd = n//2
-        # def power(x, n, mod):
-        #     if n == 0:
-        #         return 1
-        #     half = power(x, n//2, mod)
-        #     res = (half * half) % mod
-        #     if n%2==1:
-        #         res = (res*x) % mod
-        #     return res
-        # return (power(5, even, mod) * power(4, odd, mod)) % mod
+        mod = 10**9 + 7
+        even = (n+1)//2
+        odd = n//2
+        def power(x, n, mod):
+            if n == 0:
+                return 1
+            half = power(x, n//2, mod)
+            res = (half * half) % mod
+            if n%2==1:
+                res = (res*x) % mod
+            return res
+        return (power(5, even, mod) * power(4, odd, mod)) % mod
 
         # Approach 5
         # mod = 10**9 + 7
@@ -67,14 +67,29 @@ class Solution:
         # return (power(5, even) * power(4, odd)) % mod
 
         # Approach 7
-        mod = 10**9 + 7
-        @lru_cache(None)
-        def power(b, exp):
-            if exp == 0: return 1
-            half = power(b, exp // 2)
-            res = (half * half) % mod
-            if exp % 2 == 1: res = (res * b) % mod
-            return res
-        even = (n + 1) // 2
-        odd = n // 2
-        return (power(5, even) * power(4, odd)) % mod
+        # mod = 10**9 + 7
+        # @lru_cache(None)
+        # def power(b, exp):
+        #     if exp == 0: return 1
+        #     half = power(b, exp // 2)
+        #     res = (half * half) % mod
+        #     if exp % 2 == 1: res = (res * b) % mod
+        #     return res
+        # even = (n + 1) // 2
+        # odd = n // 2
+        # return (power(5, even) * power(4, odd)) % mod
+
+        # Approach 8
+        # m = 10**9 + 7
+        # e = (n + 1) // 2
+        # o = n // 2
+        # return ((5**e) * (4**o)) % m 
+        # Fails for large n
+
+        # Approach 9
+        # m = 10**9 + 7
+        # e = (n + 1) // 2
+        # o = n // 2
+        # res = (math.pow(5, e)%m) * (math.pow(4, o)%m)
+        # return (int(res) % m) %m
+        # Fails for large n
