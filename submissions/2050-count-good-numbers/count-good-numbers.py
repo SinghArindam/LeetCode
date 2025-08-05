@@ -52,15 +52,28 @@ class Solution:
         # return (a * b) % mod
 
         # Approach 6
+        # mod = 10**9 + 7
+        # memo = {}
+        # def power(b, exp):
+        #     if (b, exp) in memo: return memo[(b, exp)]
+        #     if exp == 0: return 1
+        #     half = power(b, exp // 2)
+        #     res = (half * half) % mod
+        #     if exp % 2 == 1: res = (res * b) % mod
+        #     memo[(b, exp)] = res
+        #     return res
+        # even = (n + 1) // 2
+        # odd = n // 2
+        # return (power(5, even) * power(4, odd)) % mod
+
+        # Approach 7
         mod = 10**9 + 7
-        memo = {}
+        @lru_cache(None)
         def power(b, exp):
-            if (b, exp) in memo: return memo[(b, exp)]
             if exp == 0: return 1
             half = power(b, exp // 2)
             res = (half * half) % mod
             if exp % 2 == 1: res = (res * b) % mod
-            memo[(b, exp)] = res
             return res
         even = (n + 1) // 2
         odd = n // 2
