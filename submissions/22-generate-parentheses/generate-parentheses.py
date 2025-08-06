@@ -27,11 +27,25 @@ class Solution:
         # return dp[n]
 
         # Approach 3
-        if n == 0:
-            return [""]
+        # if n == 0:
+        #     return [""]
+        # result = []
+        # for i in range(n):
+        #     for left in self.generateParenthesis(i):
+        #         for right in self.generateParenthesis(n - 1 - i):
+        #             result.append(f"({left}){right}")
+        # return result
+
+        # Approach 4
         result = []
-        for i in range(n):
-            for left in self.generateParenthesis(i):
-                for right in self.generateParenthesis(n - 1 - i):
-                    result.append(f"({left}){right}")
+        queue = deque([("", 0, 0)])
+        while queue:
+            current_string, open_count, close_count = queue.popleft()
+            if len(current_string) == 2 * n:
+                result.append(current_string)
+                continue
+            if open_count < n:
+                queue.append((current_string + "(", open_count + 1, close_count))
+            if close_count < open_count:
+                queue.append((current_string + ")", open_count, close_count + 1))
         return result
