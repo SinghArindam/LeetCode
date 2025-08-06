@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 70562,
-      "kb": 68.91,
+      "bytes": 72093,
+      "kb": 70.4,
       "mb": 0.07,
       "gb": 0.0
     },
-    "modified": "2025-08-05T00:33:00.504664",
+    "modified": "2025-08-06T00:07:45.578010",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 31412,
-      "kb": 30.68,
+      "bytes": 32031,
+      "kb": 31.28,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-05T00:33:00.566859",
+    "modified": "2025-08-06T00:07:45.609273",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 19395,
-      "kb": 18.94,
+      "bytes": 19770,
+      "kb": 19.31,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-05T00:33:00.507203",
+    "modified": "2025-08-06T00:07:45.578010",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -345,6 +345,18 @@
     },
     "modified": "2025-07-07T20:45:07.102707",
     "created": "2025-07-07T20:45:07.102247",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\22-generate-parentheses_Notes.md",
+    "size": {
+      "bytes": 25279,
+      "kb": 24.69,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-08-06T22:18:11.801786",
+    "created": "2025-08-06T22:18:11.800788",
     "extension": ".md"
   },
   {
@@ -864,6 +876,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\22-generate-parentheses_Atomic_Notes.md",
+    "size": {
+      "bytes": 6549,
+      "kb": 6.4,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-06T22:18:56.751744",
+    "created": "2025-08-06T22:18:56.751744",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\2434-design-a-number-container-system_Atomic_Notes.md",
     "size": {
       "bytes": 6652,
@@ -1377,6 +1401,18 @@
     },
     "modified": "2025-07-07T20:45:07.137903",
     "created": "2025-07-07T20:45:07.137655",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\22-generate-parentheses_Short_Notes.md",
+    "size": {
+      "bytes": 3187,
+      "kb": 3.11,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-06T22:18:22.104738",
+    "created": "2025-08-06T22:18:22.043482",
     "extension": ".md"
   },
   {
@@ -2169,6 +2205,30 @@
     },
     "modified": "2025-07-07T20:45:07.176831",
     "created": "2025-07-07T20:45:07.176831",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\22-generate-parentheses\\generate-parentheses.py",
+    "size": {
+      "bytes": 5125,
+      "kb": 5.0,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-06T22:16:44.275473",
+    "created": "2025-08-06T22:16:44.274962",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\22-generate-parentheses\\README.md",
+    "size": {
+      "bytes": 748,
+      "kb": 0.73,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-06T22:16:44.274817",
+    "created": "2025-08-06T22:16:44.274308",
     "extension": ".md"
   },
   {

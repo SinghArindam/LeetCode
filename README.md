@@ -4,6 +4,9 @@
 ### [13] Roman To Integer
 - [Complete Notes](Notes/13-roman-to-integer_Notes.md) | [Short Notes](Notes/Short_Notes/13-roman-to-integer_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/13-roman-to-integer_Atomic_Notes.md)
 
+### [22] Generate Parentheses
+- [Complete Notes](Notes/22-generate-parentheses_Notes.md) | [Short Notes](Notes/Short_Notes/22-generate-parentheses_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/22-generate-parentheses_Atomic_Notes.md)
+
 ### [26] Remove Duplicates From Sorted Array
 - [Complete Notes](Notes/26-remove-duplicates-from-sorted-array_Notes.md) | [Short Notes](Notes/Short_Notes/26-remove-duplicates-from-sorted-array_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/26-remove-duplicates-from-sorted-array_Atomic_Notes.md)
 
@@ -156,6 +159,7 @@
 │   │   ├── 2021-remove-all-occurrences-of-a-substring_Atomic_Notes.md (7.0 KB) [.md]
 │   │   ├── 2050-count-good-numbers_Atomic_Notes.md (6.42 KB) [.md]
 │   │   ├── 2107-find-unique-binary-string_Atomic_Notes.md (8.54 KB) [.md]
+│   │   ├── 22-generate-parentheses_Atomic_Notes.md (6.4 KB) [.md]
 │   │   ├── 2434-design-a-number-container-system_Atomic_Notes.md (6.5 KB) [.md]
 │   │   ├── 2448-count-number-of-bad-pairs_Atomic_Notes.md (4.6 KB) [.md]
 │   │   ├── 2456-construct-smallest-number-from-di-string_Atomic_Notes.md (6.73 KB) [.md]
@@ -200,6 +204,7 @@
 │   │   ├── 2021-remove-all-occurrences-of-a-substring_Short_Notes.md (3.26 KB) [.md]
 │   │   ├── 2050-count-good-numbers_Short_Notes.md (2.77 KB) [.md]
 │   │   ├── 2107-find-unique-binary-string_Short_Notes.md (2.66 KB) [.md]
+│   │   ├── 22-generate-parentheses_Short_Notes.md (3.11 KB) [.md]
 │   │   ├── 2434-design-a-number-container-system_Short_Notes.md (3.36 KB) [.md]
 │   │   ├── 2448-count-number-of-bad-pairs_Short_Notes.md (3.66 KB) [.md]
 │   │   ├── 2456-construct-smallest-number-from-di-string_Short_Notes.md (2.9 KB) [.md]
@@ -243,6 +248,7 @@
 │   ├── 2021-remove-all-occurrences-of-a-substring_Notes.md (18.75 KB) [.md]
 │   ├── 2050-count-good-numbers_Notes.md (18.34 KB) [.md]
 │   ├── 2107-find-unique-binary-string_Notes.md (14.28 KB) [.md]
+│   ├── 22-generate-parentheses_Notes.md (24.69 KB) [.md]
 │   ├── 2434-design-a-number-container-system_Notes.md (21.63 KB) [.md]
 │   ├── 2448-count-number-of-bad-pairs_Notes.md (18.71 KB) [.md]
 │   ├── 2456-construct-smallest-number-from-di-string_Notes.md (21.75 KB) [.md]
@@ -336,6 +342,9 @@
 │   ├── 2107-find-unique-binary-string/
 │   │   ├── README.md (1.83 KB) [.md]
 │   │   └── find-unique-binary-string.cpp (347 bytes) [.cpp]
+│   ├── 22-generate-parentheses/
+│   │   ├── README.md (748 bytes) [.md]
+│   │   └── generate-parentheses.py (5.0 KB) [.py]
 │   ├── 2434-design-a-number-container-system/
 │   │   ├── README.md (2.59 KB) [.md]
 │   │   └── design-a-number-container-system.py (894 bytes) [.py]
@@ -402,24 +411,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (30.68 KB) [.md]
-├── TREE_FILE.txt (18.94 KB) [.txt]
+├── README.md (31.28 KB) [.md]
+├── TREE_FILE.txt (19.31 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (68.91 KB) [.json]
+├── file_structure.json (70.4 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 227
-Total Size: 1.66 MB
+Total Files: 232
+Total Size: 1.7 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 175 files
-  .py: 33 files
+  .md: 179 files
+  .py: 34 files
   .pyc: 2 files
   .txt: 2 files
 ```
