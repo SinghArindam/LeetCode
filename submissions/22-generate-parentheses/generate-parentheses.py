@@ -113,11 +113,25 @@ class Solution:
         # return list(result)
 
         # Approach 9
-        if n == 0:
-            return {""}
-        prev_solutions = self.generateParenthesis(n - 1)
-        new_solutions = set()
-        for s in prev_solutions:
-            for i in range(len(s) + 1):
-                new_solutions.add(s[:i] + "()" + s[i:])
-        return list(new_solutions) if n > 0 else [""]
+        # if n == 0:
+        #     return {""}
+        # prev_solutions = self.generateParenthesis(n - 1)
+        # new_solutions = set()
+        # for s in prev_solutions:
+        #     for i in range(len(s) + 1):
+        #         new_solutions.add(s[:i] + "()" + s[i:])
+        # return list(new_solutions) if n > 0 else [""]
+
+        # Approach 10
+        result = []
+        def backtrack(current_string, open_count, balance):
+            if len(current_string) == 2 * n:
+                if balance == 0:
+                    result.append(current_string)
+                return
+            if open_count < n:
+                backtrack(current_string + "(", open_count + 1, balance + 1)
+            if balance > 0:
+                backtrack(current_string + ")", open_count, balance - 1)
+        backtrack("", 0, 0)
+        return result
