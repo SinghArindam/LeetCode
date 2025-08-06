@@ -15,13 +15,23 @@ class Solution:
         # return result
         
         # Approach 2
+        # if n == 0:
+        #     return [""]
+        # dp = [[] for _ in range(n + 1)]
+        # dp[0] = [""]
+        # for i in range(1, n + 1):
+        #     for j in range(i):
+        #         for inner in dp[j]:
+        #             for outer in dp[i - 1 - j]:
+        #                 dp[i].append(f"({inner}){outer}")
+        # return dp[n]
+
+        # Approach 3
         if n == 0:
             return [""]
-        dp = [[] for _ in range(n + 1)]
-        dp[0] = [""]
-        for i in range(1, n + 1):
-            for j in range(i):
-                for inner in dp[j]:
-                    for outer in dp[i - 1 - j]:
-                        dp[i].append(f"({inner}){outer}")
-        return dp[n]
+        result = []
+        for i in range(n):
+            for left in self.generateParenthesis(i):
+                for right in self.generateParenthesis(n - 1 - i):
+                    result.append(f"({left}){right}")
+        return result
