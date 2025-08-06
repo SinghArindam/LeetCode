@@ -78,20 +78,46 @@ class Solution:
 
         # Approach 7
         result = []
-        for i in range(1 << (2 * n)):
-            candidate = ""
-            balance = 0
-            is_valid = True
-            for j in range(2 * n):
-                if (i >> j) & 1:
-                    candidate += "("
-                    balance += 1
-                else:
-                    candidate += ")"
-                    balance -= 1
-                if balance < 0:
-                    is_valid = False
-                    break
-            if is_valid and balance == 0:
-                result.append(candidate)
-        return result
+        # for i in range(1 << (2 * n)):
+        #     candidate = ""
+        #     balance = 0
+        #     is_valid = True
+        #     for j in range(2 * n):
+        #         if (i >> j) & 1:
+        #             candidate += "("
+        #             balance += 1
+        #         else:
+        #             candidate += ")"
+        #             balance -= 1
+        #         if balance < 0:
+        #             is_valid = False
+        #             break
+        #     if is_valid and balance == 0:
+        #         result.append(candidate)
+        # return result
+
+        # Approach 8
+        # result = set()
+        # base = "()" * n
+        # for p in set(itertools.permutations(base)):
+        #     candidate = "".join(p)
+        #     balance = 0
+        #     is_valid = True
+        #     for char in candidate:
+        #         balance += 1 if char == '(' else -1
+        #         if balance < 0:
+        #             is_valid = False
+        #             break
+        #     if is_valid and balance == 0:
+        #         result.add(candidate)
+        # return list(result)
+
+        # Approach 9
+        if n == 0:
+            return {""}
+        prev_solutions = self.generateParenthesis(n - 1)
+        new_solutions = set()
+        for s in prev_solutions:
+            for i in range(len(s) + 1):
+                new_solutions.add(s[:i] + "()" + s[i:])
+        return list(new_solutions) if n > 0 else [""]
