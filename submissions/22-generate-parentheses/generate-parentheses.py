@@ -37,15 +37,61 @@ class Solution:
         # return result
 
         # Approach 4
+        # result = []
+        # queue = deque([("", 0, 0)])
+        # while queue:
+        #     current_string, open_count, close_count = queue.popleft()
+        #     if len(current_string) == 2 * n:
+        #         result.append(current_string)
+        #         continue
+        #     if open_count < n:
+        #         queue.append((current_string + "(", open_count + 1, close_count))
+        #     if close_count < open_count:
+        #         queue.append((current_string + ")", open_count, close_count + 1))
+        # return result
+
+        # Approach 5
+        # result = []
+        # stack = [("", 0, 0)]
+        # while stack:
+        #     current_string, open_count, close_count = stack.pop()
+        #     if len(current_string) == 2 * n:
+        #         result.append(current_string)
+        #         continue
+        #     # Note the reverse order of pushing onto the stack for DFS
+        #     if close_count < open_count:
+        #         stack.append((current_string + ")", open_count, close_count + 1))
+        #     if open_count < n:
+        #         stack.append((current_string + "(", open_count + 1, close_count))
+        # return result
+
+        # Approach 6
+        # def generate(current_string, open_count, close_count):
+        #     if len(current_string) == 2 * n:
+        #         yield current_string
+        #     else:
+        #         if open_count < n:
+        #             yield from generate(current_string + "(", open_count + 1, close_count)
+        #         if close_count < open_count:
+        #             yield from generate(current_string + ")", open_count, close_count + 1)
+        # return list(generate("", 0, 0))
+
+        # Approach 7
         result = []
-        queue = deque([("", 0, 0)])
-        while queue:
-            current_string, open_count, close_count = queue.popleft()
-            if len(current_string) == 2 * n:
-                result.append(current_string)
-                continue
-            if open_count < n:
-                queue.append((current_string + "(", open_count + 1, close_count))
-            if close_count < open_count:
-                queue.append((current_string + ")", open_count, close_count + 1))
+        for i in range(1 << (2 * n)):
+            candidate = ""
+            balance = 0
+            is_valid = True
+            for j in range(2 * n):
+                if (i >> j) & 1:
+                    candidate += "("
+                    balance += 1
+                else:
+                    candidate += ")"
+                    balance -= 1
+                if balance < 0:
+                    is_valid = False
+                    break
+            if is_valid and balance == 0:
+                result.append(candidate)
         return result
