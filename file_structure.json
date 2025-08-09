@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 72093,
-      "kb": 70.4,
+      "bytes": 73623,
+      "kb": 71.9,
       "mb": 0.07,
       "gb": 0.0
     },
-    "modified": "2025-08-06T00:07:45.578010",
+    "modified": "2025-08-06T22:18:57.126081",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 32031,
-      "kb": 31.28,
+      "bytes": 32651,
+      "kb": 31.89,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-06T00:07:45.609273",
+    "modified": "2025-08-06T22:18:57.157647",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 19770,
-      "kb": 19.31,
+      "bytes": 20146,
+      "kb": 19.67,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-06T00:07:45.578010",
+    "modified": "2025-08-06T22:18:57.128085",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -249,6 +249,18 @@
     },
     "modified": "2025-07-09T20:54:12.834411",
     "created": "2025-07-09T20:54:12.803144",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\17-letter-combinations-of-a-phone-number_Notes.md",
+    "size": {
+      "bytes": 20227,
+      "kb": 19.75,
+      "mb": 0.02,
+      "gb": 0.0
+    },
+    "modified": "2025-08-09T23:22:40.035944",
+    "created": "2025-08-09T23:22:40.035944",
     "extension": ".md"
   },
   {
@@ -780,6 +792,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\17-letter-combinations-of-a-phone-number_Atomic_Notes.md",
+    "size": {
+      "bytes": 6520,
+      "kb": 6.37,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-09T23:23:12.406575",
+    "created": "2025-08-09T23:23:12.406575",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\1819-construct-the-lexicographically-largest-valid-sequence_Atomic_Notes.md",
     "size": {
       "bytes": 8384,
@@ -1305,6 +1329,18 @@
     },
     "modified": "2025-07-09T20:54:21.724347",
     "created": "2025-07-09T20:54:21.724347",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\17-letter-combinations-of-a-phone-number_Short_Notes.md",
+    "size": {
+      "bytes": 3617,
+      "kb": 3.53,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-09T23:22:50.385418",
+    "created": "2025-08-09T23:22:50.385418",
     "extension": ".md"
   },
   {
@@ -2001,6 +2037,30 @@
     },
     "modified": "2025-07-09T20:39:44.357841",
     "created": "2025-07-09T20:39:44.357841",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\17-letter-combinations-of-a-phone-number\\letter-combinations-of-a-phone-number.py",
+    "size": {
+      "bytes": 2792,
+      "kb": 2.73,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-09T23:21:27.203429",
+    "created": "2025-08-09T23:21:27.203429",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\17-letter-combinations-of-a-phone-number\\README.md",
+    "size": {
+      "bytes": 1549,
+      "kb": 1.51,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-09T23:21:27.195177",
+    "created": "2025-08-09T23:21:27.195177",
     "extension": ".md"
   },
   {

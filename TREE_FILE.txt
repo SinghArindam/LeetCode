@@ -17,6 +17,7 @@ Directory Structure
 │   │   ├── 1477-product-of-the-last-k-numbers_Atomic_Notes.md (6.75 KB) [.md]
 │   │   ├── 1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Atomic_Notes.md (5.18 KB) [.md]
 │   │   ├── 169-majority-element_Atomic_Notes.md (5.99 KB) [.md]
+│   │   ├── 17-letter-combinations-of-a-phone-number_Atomic_Notes.md (6.37 KB) [.md]
 │   │   ├── 1819-construct-the-lexicographically-largest-valid-sequence_Atomic_Notes.md (8.19 KB) [.md]
 │   │   ├── 1851-maximum-number-of-events-that-can-be-attended-ii_Atomic_Notes.md (5.61 KB) [.md]
 │   │   ├── 189-rotate-array_Atomic_Notes.md (7.39 KB) [.md]
@@ -62,6 +63,7 @@ Directory Structure
 │   │   ├── 1477-product-of-the-last-k-numbers_Short_Notes.md (3.33 KB) [.md]
 │   │   ├── 1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Short_Notes.md (3.86 KB) [.md]
 │   │   ├── 169-majority-element_Short_Notes.md (2.27 KB) [.md]
+│   │   ├── 17-letter-combinations-of-a-phone-number_Short_Notes.md (3.53 KB) [.md]
 │   │   ├── 1819-construct-the-lexicographically-largest-valid-sequence_Short_Notes.md (3.53 KB) [.md]
 │   │   ├── 1851-maximum-number-of-events-that-can-be-attended-ii_Short_Notes.md (3.3 KB) [.md]
 │   │   ├── 189-rotate-array_Short_Notes.md (2.68 KB) [.md]
@@ -106,6 +108,7 @@ Directory Structure
 │   ├── 1477-product-of-the-last-k-numbers_Notes.md (20.27 KB) [.md]
 │   ├── 1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n_Notes.md (31.69 KB) [.md]
 │   ├── 169-majority-element_Notes.md (13.7 KB) [.md]
+│   ├── 17-letter-combinations-of-a-phone-number_Notes.md (19.75 KB) [.md]
 │   ├── 1819-construct-the-lexicographically-largest-valid-sequence_Notes.md (24.23 KB) [.md]
 │   ├── 1851-maximum-number-of-events-that-can-be-attended-ii_Notes.md (23.21 KB) [.md]
 │   ├── 189-rotate-array_Notes.md (25.56 KB) [.md]
@@ -182,6 +185,9 @@ Directory Structure
 │   ├── 169-majority-element/
 │   │   ├── README.md (1.09 KB) [.md]
 │   │   └── majority-element.py (285 bytes) [.py]
+│   ├── 17-letter-combinations-of-a-phone-number/
+│   │   ├── README.md (1.51 KB) [.md]
+│   │   └── letter-combinations-of-a-phone-number.py (2.73 KB) [.py]
 │   ├── 1819-construct-the-lexicographically-largest-valid-sequence/
 │   │   ├── README.md (2.07 KB) [.md]
 │   │   └── construct-the-lexicographically-largest-valid-sequence.cpp (1.16 KB) [.cpp]
@@ -277,11 +283,11 @@ Directory Structure
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (31.28 KB) [.md]
-├── TREE_FILE.txt (19.31 KB) [.txt]
+├── README.md (31.89 KB) [.md]
+├── TREE_FILE.txt (19.67 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (70.4 KB) [.json]
+├── file_structure.json (71.9 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
@@ -289,13 +295,13 @@ Directory Structure
 ==================================================
 Summary
 ==================================================
-Total Files: 232
-Total Size: 1.7 MB
+Total Files: 237
+Total Size: 1.74 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 179 files
-  .py: 34 files
+  .md: 183 files
+  .py: 35 files
   .pyc: 2 files
   .txt: 2 files
