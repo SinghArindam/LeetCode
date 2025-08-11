@@ -45,16 +45,30 @@ class Solution:
         # return result
 
         # Approach 4
-        result = []
-        def backtrack(index, combination, current_sum):
+        # result = []
+        # def backtrack(index, combination, current_sum):
+        #     if current_sum == target:
+        #         result.append(list(combination))
+        #         return
+        #     if current_sum > target or index >= len(candidates):
+        #         return
+        #     combination.append(candidates[index])
+        #     backtrack(index, combination, current_sum + candidates[index])
+        #     combination.pop()
+        #     backtrack(index + 1, combination, current_sum)
+        # backtrack(0, [], 0)
+        # return result
+
+        # Approach 5
+        def find_combinations(start_index, combination, current_sum):
             if current_sum == target:
-                result.append(list(combination))
+                yield list(combination)
                 return
-            if current_sum > target or index >= len(candidates):
+            if current_sum > target:
                 return
-            combination.append(candidates[index])
-            backtrack(index, combination, current_sum + candidates[index])
-            combination.pop()
-            backtrack(index + 1, combination, current_sum)
-        backtrack(0, [], 0)
-        return result
+            for i in range(start_index, len(candidates)):
+                num = candidates[i]
+                combination.append(num)
+                yield from find_combinations(i, combination, current_sum + num)
+                combination.pop()
+        return list(find_combinations(0, [], 0))
