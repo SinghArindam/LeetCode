@@ -28,18 +28,33 @@ class Solution:
         # return result
 
         # Approach 3
+        # result = []
+        # candidates.sort()
+        # def backtrack(start_index, combination, current_sum):
+        #     if current_sum == target:
+        #         result.append(list(combination))
+        #         return
+        #     for i in range(start_index, len(candidates)):
+        #         num = candidates[i]
+        #         if current_sum + num > target:
+        #             break
+        #         combination.append(num)
+        #         backtrack(i, combination, current_sum + num)
+        #         combination.pop()
+        # backtrack(0, [], 0)
+        # return result
+
+        # Approach 4
         result = []
-        candidates.sort()
-        def backtrack(start_index, combination, current_sum):
+        def backtrack(index, combination, current_sum):
             if current_sum == target:
                 result.append(list(combination))
                 return
-            for i in range(start_index, len(candidates)):
-                num = candidates[i]
-                if current_sum + num > target:
-                    break
-                combination.append(num)
-                backtrack(i, combination, current_sum + num)
-                combination.pop()
+            if current_sum > target or index >= len(candidates):
+                return
+            combination.append(candidates[index])
+            backtrack(index, combination, current_sum + candidates[index])
+            combination.pop()
+            backtrack(index + 1, combination, current_sum)
         backtrack(0, [], 0)
         return result
