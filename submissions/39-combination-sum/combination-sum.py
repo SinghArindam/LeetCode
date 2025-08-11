@@ -74,16 +74,25 @@ class Solution:
         # return list(find_combinations(0, [], 0))
 
         # Approach 6
-        result = []
-        stack = [(0, [], 0)]
-        while stack:
-            start_index, combination, current_sum = stack.pop()
-            if current_sum > target:
-                continue
-            if current_sum == target:
-                result.append(combination)
-                continue
-            for i in range(start_index, len(candidates)):
-                num = candidates[i]
-                stack.append((i, combination + [num], current_sum + num))
-        return result
+        # result = []
+        # stack = [(0, [], 0)]
+        # while stack:
+        #     start_index, combination, current_sum = stack.pop()
+        #     if current_sum > target:
+        #         continue
+        #     if current_sum == target:
+        #         result.append(combination)
+        #         continue
+        #     for i in range(start_index, len(candidates)):
+        #         num = candidates[i]
+        #         stack.append((i, combination + [num], current_sum + num))
+        # return result
+
+        # Approach 7
+        dp = [[] for _ in range(target + 1)]
+        dp[0] = [[]]
+        for num in candidates:
+            for i in range(num, target + 1):
+                for combo in dp[i - num]:
+                    dp[i].append(combo + [num]) 
+        return dp[target]
