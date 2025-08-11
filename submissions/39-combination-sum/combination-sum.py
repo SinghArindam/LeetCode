@@ -60,15 +60,30 @@ class Solution:
         # return result
 
         # Approach 5
-        def find_combinations(start_index, combination, current_sum):
-            if current_sum == target:
-                yield list(combination)
-                return
+        # def find_combinations(start_index, combination, current_sum):
+        #     if current_sum == target:
+        #         yield list(combination)
+        #         return
+        #     if current_sum > target:
+        #         return
+        #     for i in range(start_index, len(candidates)):
+        #         num = candidates[i]
+        #         combination.append(num)
+        #         yield from find_combinations(i, combination, current_sum + num)
+        #         combination.pop()
+        # return list(find_combinations(0, [], 0))
+
+        # Approach 6
+        result = []
+        stack = [(0, [], 0)]
+        while stack:
+            start_index, combination, current_sum = stack.pop()
             if current_sum > target:
-                return
+                continue
+            if current_sum == target:
+                result.append(combination)
+                continue
             for i in range(start_index, len(candidates)):
                 num = candidates[i]
-                combination.append(num)
-                yield from find_combinations(i, combination, current_sum + num)
-                combination.pop()
-        return list(find_combinations(0, [], 0))
+                stack.append((i, combination + [num], current_sum + num))
+        return result
