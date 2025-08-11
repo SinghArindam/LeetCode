@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 73623,
-      "kb": 71.9,
+      "bytes": 75259,
+      "kb": 73.5,
       "mb": 0.07,
       "gb": 0.0
     },
-    "modified": "2025-08-06T22:18:57.126081",
+    "modified": "2025-08-09T23:23:12.842114",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 32651,
-      "kb": 31.89,
+      "bytes": 33427,
+      "kb": 32.64,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-06T22:18:57.157647",
+    "modified": "2025-08-09T23:23:12.899883",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 20146,
-      "kb": 19.67,
+      "bytes": 20610,
+      "kb": 20.13,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-06T22:18:57.128085",
+    "modified": "2025-08-09T23:23:12.875143",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -561,6 +561,18 @@
     },
     "modified": "2025-08-05T00:32:20.636018",
     "created": "2025-08-05T00:32:20.344745",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\39-combination-sum_Notes.md",
+    "size": {
+      "bytes": 48570,
+      "kb": 47.43,
+      "mb": 0.05,
+      "gb": 0.0
+    },
+    "modified": "2025-08-11T23:34:22.168513",
+    "created": "2025-08-11T23:34:21.877407",
     "extension": ".md"
   },
   {
@@ -1104,6 +1116,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\39-combination-sum_Atomic_Notes.md",
+    "size": {
+      "bytes": 7519,
+      "kb": 7.34,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-11T23:35:16.491590",
+    "created": "2025-08-11T23:35:16.491590",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\542-01-matrix_Atomic_Notes.md",
     "size": {
       "bytes": 6504,
@@ -1641,6 +1665,18 @@
     },
     "modified": "2025-08-05T00:32:34.247178",
     "created": "2025-08-05T00:32:34.247178",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\39-combination-sum_Short_Notes.md",
+    "size": {
+      "bytes": 4545,
+      "kb": 4.44,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-11T23:34:38.611121",
+    "created": "2025-08-11T23:34:38.611121",
     "extension": ".md"
   },
   {
@@ -2674,6 +2710,30 @@
     "modified": "2025-08-05T00:20:26.965066",
     "created": "2025-08-05T00:20:26.965066",
     "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\39-combination-sum\\combination-sum.py",
+    "size": {
+      "bytes": 3786,
+      "kb": 3.7,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-11T23:32:40.252492",
+    "created": "2025-08-11T23:32:40.252492",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\39-combination-sum\\README.md",
+    "size": {
+      "bytes": 2010,
+      "kb": 1.96,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-11T23:32:40.237493",
+    "created": "2025-08-11T23:32:40.237493",
+    "extension": ".md"
   },
   {
     "relative_path": "submissions\\542-01-matrix\\01-matrix.py",

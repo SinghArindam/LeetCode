@@ -16,6 +16,9 @@
 ### [27] Remove Element
 - [Complete Notes](Notes/27-remove-element_Notes.md) | [Short Notes](Notes/Short_Notes/27-remove-element_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/27-remove-element_Atomic_Notes.md)
 
+### [39] Combination Sum
+- [Complete Notes](Notes/39-combination-sum_Notes.md) | [Short Notes](Notes/Short_Notes/39-combination-sum_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/39-combination-sum_Atomic_Notes.md)
+
 ### [55] Jump Game
 - [Complete Notes](Notes/55-jump-game_Notes.md) | [Short Notes](Notes/Short_Notes/55-jump-game_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/55-jump-game_Atomic_Notes.md)
 
@@ -180,6 +183,7 @@
 │   │   ├── 3483-alternating-groups-ii_Atomic_Notes.md (5.92 KB) [.md]
 │   │   ├── 3600-find-the-k-th-character-in-string-game-i_Atomic_Notes.md (6.45 KB) [.md]
 │   │   ├── 3799-unique-3-digit-even-numbers_Atomic_Notes.md (7.13 KB) [.md]
+│   │   ├── 39-combination-sum_Atomic_Notes.md (7.34 KB) [.md]
 │   │   ├── 542-01-matrix_Atomic_Notes.md (6.35 KB) [.md]
 │   │   ├── 547-number-of-provinces_Atomic_Notes.md (6.15 KB) [.md]
 │   │   ├── 55-jump-game_Atomic_Notes.md (5.71 KB) [.md]
@@ -226,6 +230,7 @@
 │   │   ├── 3483-alternating-groups-ii_Short_Notes.md (3.03 KB) [.md]
 │   │   ├── 3600-find-the-k-th-character-in-string-game-i_Short_Notes.md (2.96 KB) [.md]
 │   │   ├── 3799-unique-3-digit-even-numbers_Short_Notes.md (3.68 KB) [.md]
+│   │   ├── 39-combination-sum_Short_Notes.md (4.44 KB) [.md]
 │   │   ├── 542-01-matrix_Short_Notes.md (3.11 KB) [.md]
 │   │   ├── 547-number-of-provinces_Short_Notes.md (3.2 KB) [.md]
 │   │   ├── 55-jump-game_Short_Notes.md (2.4 KB) [.md]
@@ -271,6 +276,7 @@
 │   ├── 3483-alternating-groups-ii_Notes.md (20.12 KB) [.md]
 │   ├── 3600-find-the-k-th-character-in-string-game-i_Notes.md (20.86 KB) [.md]
 │   ├── 3799-unique-3-digit-even-numbers_Notes.md (27.47 KB) [.md]
+│   ├── 39-combination-sum_Notes.md (47.43 KB) [.md]
 │   ├── 542-01-matrix_Notes.md (20.99 KB) [.md]
 │   ├── 547-number-of-provinces_Notes.md (24.41 KB) [.md]
 │   ├── 55-jump-game_Notes.md (16.85 KB) [.md]
@@ -402,6 +408,9 @@
 │   ├── 3799-unique-3-digit-even-numbers/
 │   │   ├── README.md (2.25 KB) [.md]
 │   │   └── unique-3-digit-even-numbers.py (2.67 KB) [.py]
+│   ├── 39-combination-sum/
+│   │   ├── README.md (1.96 KB) [.md]
+│   │   └── combination-sum.py (3.7 KB) [.py]
 │   ├── 542-01-matrix/
 │   │   ├── 01-matrix.py (2.02 KB) [.py]
 │   │   └── README.md (1.62 KB) [.md]
@@ -420,24 +429,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (31.89 KB) [.md]
-├── TREE_FILE.txt (19.67 KB) [.txt]
+├── README.md (32.64 KB) [.md]
+├── TREE_FILE.txt (20.13 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (71.9 KB) [.json]
+├── file_structure.json (73.5 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 237
-Total Size: 1.74 MB
+Total Files: 242
+Total Size: 1.8 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 183 files
-  .py: 35 files
+  .md: 187 files
+  .py: 36 files
   .pyc: 2 files
   .txt: 2 files
 ```
