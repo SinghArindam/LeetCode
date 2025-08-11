@@ -12,15 +12,32 @@ class Solution:
         # return result
         
         # Approach 2
+        # result = []
+        # def backtrack(start_index, combination, current_sum):
+        #     if current_sum == target:
+        #         result.append(list(combination))
+        #         return
+        #     if current_sum > target:
+        #         return
+        #     for i in range(start_index, len(candidates)):
+        #         num = candidates[i]
+        #         combination.append(num)
+        #         backtrack(i, combination, current_sum + num)
+        #         combination.pop()
+        # backtrack(0, [], 0)
+        # return result
+
+        # Approach 3
         result = []
+        candidates.sort()
         def backtrack(start_index, combination, current_sum):
             if current_sum == target:
                 result.append(list(combination))
                 return
-            if current_sum > target:
-                return
             for i in range(start_index, len(candidates)):
                 num = candidates[i]
+                if current_sum + num > target:
+                    break
                 combination.append(num)
                 backtrack(i, combination, current_sum + num)
                 combination.pop()
