@@ -51,25 +51,36 @@ class Solution:
         # return total_candies
 
         # Approach 4
+        # num_kids = len(ratings)
+        # candies = [0] * num_kids
+        # queue = deque()
+        # for i in range(num_kids):
+        #     is_left_valley = (i == 0) or (ratings[i] <= ratings[i-1])
+        #     is_right_valley = (i == num_kids - 1) or (ratings[i] <= ratings[i+1])
+        #     if is_left_valley and is_right_valley:
+        #         candies[i] = 1
+        #         queue.append(i)
+        # while queue:
+        #     kid_index = queue.popleft()
+        #     if kid_index > 0:
+        #         neighbor_index = kid_index - 1
+        #         if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
+        #             candies[neighbor_index] = candies[kid_index] + 1
+        #             queue.append(neighbor_index)
+        #     if kid_index < num_kids - 1:
+        #         neighbor_index = kid_index + 1
+        #         if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
+        #             candies[neighbor_index] = candies[kid_index] + 1
+        #             queue.append(neighbor_index)
+        # return sum(candies)
+
+        # Approach 5
         num_kids = len(ratings)
-        candies = [0] * num_kids
-        queue = deque()
-        for i in range(num_kids):
-            is_left_valley = (i == 0) or (ratings[i] <= ratings[i-1])
-            is_right_valley = (i == num_kids - 1) or (ratings[i] <= ratings[i+1])
-            if is_left_valley and is_right_valley:
-                candies[i] = 1
-                queue.append(i)
-        while queue:
-            kid_index = queue.popleft()
-            if kid_index > 0:
-                neighbor_index = kid_index - 1
-                if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
-                    candies[neighbor_index] = candies[kid_index] + 1
-                    queue.append(neighbor_index)
-            if kid_index < num_kids - 1:
-                neighbor_index = kid_index + 1
-                if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
-                    candies[neighbor_index] = candies[kid_index] + 1
-                    queue.append(neighbor_index)
+        candies = [1] * num_kids
+        sorted_kids = sorted(range(num_kids), key=lambda k: ratings[k])
+        for i in sorted_kids:
+            if i > 0 and ratings[i] > ratings[i - 1]:
+                candies[i] = max(candies[i], candies[i - 1] + 1)
+            if i < num_kids - 1 and ratings[i] > ratings[i + 1]:
+                candies[i] = max(candies[i], candies[i + 1] + 1)
         return sum(candies)
