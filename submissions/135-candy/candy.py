@@ -27,25 +27,49 @@ class Solution:
         # return total_candies
         
         # Approach 3
-        if not ratings:
-            return 0
-        total_candies = 1
-        up_slope_len = 0
-        down_slope_len = 0
-        peak_len = 0
-        for i in range(1, len(ratings)):
-            if ratings[i] > ratings[i - 1]:
-                up_slope_len += 1
-                down_slope_len = 0
-                peak_len = up_slope_len
-                total_candies += 1 + up_slope_len
-            elif ratings[i] == ratings[i - 1]:
-                up_slope_len = down_slope_len = peak_len = 0
-                total_candies += 1
-            else:
-                up_slope_len = 0
-                down_slope_len += 1
-                total_candies += down_slope_len
-                if peak_len < down_slope_len:
-                    total_candies += 1    
-        return total_candies
+        # if not ratings:
+        #     return 0
+        # total_candies = 1
+        # up_slope_len = 0
+        # down_slope_len = 0
+        # peak_len = 0
+        # for i in range(1, len(ratings)):
+        #     if ratings[i] > ratings[i - 1]:
+        #         up_slope_len += 1
+        #         down_slope_len = 0
+        #         peak_len = up_slope_len
+        #         total_candies += 1 + up_slope_len
+        #     elif ratings[i] == ratings[i - 1]:
+        #         up_slope_len = down_slope_len = peak_len = 0
+        #         total_candies += 1
+        #     else:
+        #         up_slope_len = 0
+        #         down_slope_len += 1
+        #         total_candies += down_slope_len
+        #         if peak_len < down_slope_len:
+        #             total_candies += 1    
+        # return total_candies
+
+        # Approach 4
+        num_kids = len(ratings)
+        candies = [0] * num_kids
+        queue = deque()
+        for i in range(num_kids):
+            is_left_valley = (i == 0) or (ratings[i] <= ratings[i-1])
+            is_right_valley = (i == num_kids - 1) or (ratings[i] <= ratings[i+1])
+            if is_left_valley and is_right_valley:
+                candies[i] = 1
+                queue.append(i)
+        while queue:
+            kid_index = queue.popleft()
+            if kid_index > 0:
+                neighbor_index = kid_index - 1
+                if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
+                    candies[neighbor_index] = candies[kid_index] + 1
+                    queue.append(neighbor_index)
+            if kid_index < num_kids - 1:
+                neighbor_index = kid_index + 1
+                if ratings[neighbor_index] > ratings[kid_index] and candies[neighbor_index] < candies[kid_index] + 1:
+                    candies[neighbor_index] = candies[kid_index] + 1
+                    queue.append(neighbor_index)
+        return sum(candies)
