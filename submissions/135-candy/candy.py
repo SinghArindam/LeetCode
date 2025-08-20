@@ -75,12 +75,41 @@ class Solution:
         # return sum(candies)
 
         # Approach 5
+        # num_kids = len(ratings)
+        # candies = [1] * num_kids
+        # sorted_kids = sorted(range(num_kids), key=lambda k: ratings[k])
+        # for i in sorted_kids:
+        #     if i > 0 and ratings[i] > ratings[i - 1]:
+        #         candies[i] = max(candies[i], candies[i - 1] + 1)
+        #     if i < num_kids - 1 and ratings[i] > ratings[i + 1]:
+        #         candies[i] = max(candies[i], candies[i + 1] + 1)
+        # return sum(candies)
+
+        # Approach 6
+        # import sys
+        sys.setrecursionlimit(2 * 10**4 + 5)
         num_kids = len(ratings)
-        candies = [1] * num_kids
-        sorted_kids = sorted(range(num_kids), key=lambda k: ratings[k])
-        for i in sorted_kids:
+        memo_left = {}
+        memo_right = {}
+        def get_left_candies(i):
+            if i in memo_left:
+                return memo_left[i]
             if i > 0 and ratings[i] > ratings[i - 1]:
-                candies[i] = max(candies[i], candies[i - 1] + 1)
+                res = 1 + get_left_candies(i - 1)
+            else:
+                res = 1
+            memo_left[i] = res
+            return res
+        def get_right_candies(i):
+            if i in memo_right:
+                return memo_right[i]
             if i < num_kids - 1 and ratings[i] > ratings[i + 1]:
-                candies[i] = max(candies[i], candies[i + 1] + 1)
-        return sum(candies)
+                res = 1 + get_right_candies(i + 1)
+            else:
+                res = 1
+            memo_right[i] = res
+            return res
+        total_candies = 0
+        for i in range(num_kids):
+            total_candies += max(get_left_candies(i), get_right_candies(i))
+        return total_candies
