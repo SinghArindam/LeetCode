@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 75259,
-      "kb": 73.5,
+      "bytes": 76762,
+      "kb": 74.96,
       "mb": 0.07,
       "gb": 0.0
     },
-    "modified": "2025-08-09T23:23:12.842114",
+    "modified": "2025-08-11T23:35:16.822195",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 33427,
-      "kb": 32.64,
+      "bytes": 34002,
+      "kb": 33.21,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-09T23:23:12.899883",
+    "modified": "2025-08-11T23:35:16.852884",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 20610,
-      "kb": 20.13,
+      "bytes": 20961,
+      "kb": 20.47,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-09T23:23:12.875143",
+    "modified": "2025-08-11T23:35:16.824198",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -189,6 +189,18 @@
     },
     "modified": "2025-07-31T23:31:59.086404",
     "created": "2025-07-31T23:31:59.086404",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\135-candy_Notes.md",
+    "size": {
+      "bytes": 39788,
+      "kb": 38.86,
+      "mb": 0.04,
+      "gb": 0.0
+    },
+    "modified": "2025-08-20T21:35:53.541548",
+    "created": "2025-08-20T21:35:53.539806",
     "extension": ".md"
   },
   {
@@ -744,6 +756,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\135-candy_Atomic_Notes.md",
+    "size": {
+      "bytes": 7004,
+      "kb": 6.84,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-20T21:36:25.205393",
+    "created": "2025-08-20T21:36:25.204434",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\1364-tuple-with-same-product_Atomic_Notes.md",
     "size": {
       "bytes": 7448,
@@ -1293,6 +1317,18 @@
     },
     "modified": "2025-07-31T23:32:11.969783",
     "created": "2025-07-31T23:32:11.969783",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\135-candy_Short_Notes.md",
+    "size": {
+      "bytes": 3838,
+      "kb": 3.75,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-20T21:36:08.730179",
+    "created": "2025-08-20T21:36:08.730179",
     "extension": ".md"
   },
   {
@@ -1942,6 +1978,30 @@
     "modified": "2025-07-31T23:19:07.079042",
     "created": "2025-07-31T23:19:07.079042",
     "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\135-candy\\candy.py",
+    "size": {
+      "bytes": 4671,
+      "kb": 4.56,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-20T21:34:09.289563",
+    "created": "2025-08-20T21:34:09.289563",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\135-candy\\README.md",
+    "size": {
+      "bytes": 1515,
+      "kb": 1.48,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-20T21:34:09.288563",
+    "created": "2025-08-20T21:34:09.288563",
+    "extension": ".md"
   },
   {
     "relative_path": "submissions\\1364-tuple-with-same-product\\README.md",

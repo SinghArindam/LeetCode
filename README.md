@@ -37,6 +37,9 @@
 ### [130] Surrounded Regions
 - [Complete Notes](Notes/130-surrounded-regions_Notes.md) | [Short Notes](Notes/Short_Notes/130-surrounded-regions_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/130-surrounded-regions_Atomic_Notes.md)
 
+### [135] Candy
+- [Complete Notes](Notes/135-candy_Notes.md) | [Short Notes](Notes/Short_Notes/135-candy_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/135-candy_Atomic_Notes.md)
+
 ### [169] Majority Element
 - [Complete Notes](Notes/169-majority-element_Notes.md) | [Short Notes](Notes/Short_Notes/169-majority-element_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/169-majority-element_Atomic_Notes.md)
 
@@ -152,6 +155,7 @@
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
 │   │   ├── 13-roman-to-integer_Atomic_Notes.md (4.4 KB) [.md]
 │   │   ├── 130-surrounded-regions_Atomic_Notes.md (4.45 KB) [.md]
+│   │   ├── 135-candy_Atomic_Notes.md (6.84 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Atomic_Notes.md (7.27 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Atomic_Notes.md (6.22 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Atomic_Notes.md (6.75 KB) [.md]
@@ -199,6 +203,7 @@
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
 │   │   ├── 13-roman-to-integer_Short_Notes.md (3.14 KB) [.md]
 │   │   ├── 130-surrounded-regions_Short_Notes.md (3.8 KB) [.md]
+│   │   ├── 135-candy_Short_Notes.md (3.75 KB) [.md]
 │   │   ├── 1364-tuple-with-same-product_Short_Notes.md (3.37 KB) [.md]
 │   │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Short_Notes.md (3.18 KB) [.md]
 │   │   ├── 1477-product-of-the-last-k-numbers_Short_Notes.md (3.33 KB) [.md]
@@ -245,6 +250,7 @@
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
 │   ├── 13-roman-to-integer_Notes.md (27.25 KB) [.md]
 │   ├── 130-surrounded-regions_Notes.md (27.17 KB) [.md]
+│   ├── 135-candy_Notes.md (38.86 KB) [.md]
 │   ├── 1364-tuple-with-same-product_Notes.md (18.31 KB) [.md]
 │   ├── 1387-find-elements-in-a-contaminated-binary-tree_Notes.md (21.37 KB) [.md]
 │   ├── 1477-product-of-the-last-k-numbers_Notes.md (20.27 KB) [.md]
@@ -311,6 +317,9 @@
 │   ├── 130-surrounded-regions/
 │   │   ├── README.md (2.63 KB) [.md]
 │   │   └── surrounded-regions.py (5.52 KB) [.py]
+│   ├── 135-candy/
+│   │   ├── README.md (1.48 KB) [.md]
+│   │   └── candy.py (4.56 KB) [.py]
 │   ├── 1364-tuple-with-same-product/
 │   │   ├── README.md (1.54 KB) [.md]
 │   │   └── tuple-with-same-product.py (750 bytes) [.py]
@@ -429,24 +438,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (32.64 KB) [.md]
-├── TREE_FILE.txt (20.13 KB) [.txt]
+├── README.md (33.21 KB) [.md]
+├── TREE_FILE.txt (20.47 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (73.5 KB) [.json]
+├── file_structure.json (74.96 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 242
-Total Size: 1.8 MB
+Total Files: 247
+Total Size: 1.86 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 187 files
-  .py: 36 files
+  .md: 191 files
+  .py: 37 files
   .pyc: 2 files
   .txt: 2 files
 ```
