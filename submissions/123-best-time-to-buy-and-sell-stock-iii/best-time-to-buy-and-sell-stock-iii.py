@@ -32,23 +32,23 @@ class Solution:
         # return total_max_profit
 
         # Approach 3
-        memo = {}
-        num_days = len(prices)
-        def find_max_profit(day, transactions_left, is_holding):
-            if day == num_days or transactions_left == 0:
-                return 0
-            state = (day, transactions_left, is_holding)
-            if state in memo:
-                return memo[state]
-            idle_profit = find_max_profit(day + 1, transactions_left, is_holding)
-            if is_holding:
-                action_profit = prices[day] + find_max_profit(day + 1, transactions_left - 1, False)
-            else:
-                action_profit = -prices[day] + find_max_profit(day + 1, transactions_left, True)
-            result = max(idle_profit, action_profit)
-            memo[state] = result
-            return result
-        return find_max_profit(0, 2, False)
+        # memo = {}
+        # num_days = len(prices)
+        # def find_max_profit(day, transactions_left, is_holding):
+        #     if day == num_days or transactions_left == 0:
+        #         return 0
+        #     state = (day, transactions_left, is_holding)
+        #     if state in memo:
+        #         return memo[state]
+        #     idle_profit = find_max_profit(day + 1, transactions_left, is_holding)
+        #     if is_holding:
+        #         action_profit = prices[day] + find_max_profit(day + 1, transactions_left - 1, False)
+        #     else:
+        #         action_profit = -prices[day] + find_max_profit(day + 1, transactions_left, True)
+        #     result = max(idle_profit, action_profit)
+        #     memo[state] = result
+        #     return result
+        # return find_max_profit(0, 2, False)
 
         # Approach 4
         num_days = len(prices)
@@ -64,6 +64,16 @@ class Solution:
         return profits_table[num_transactions][-1]
 
         # Approach 5
+        # if not prices:
+        #     return 0
+        # num_transactions = 2
+        # buy_profits = [float('-inf')] * (num_transactions + 1)
+        # sell_profits = [0] * (num_transactions + 1)
+        # for price in prices:
+        #     for k in range(1, num_transactions + 1):
+        #         buy_profits[k] = max(buy_profits[k], sell_profits[k - 1] - price)
+        #         sell_profits[k] = max(sell_profits[k], buy_profits[k] + price)
+        # return sell_profits[num_transactions]
 
         # Approach 6
 
