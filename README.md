@@ -34,6 +34,9 @@
 ### [122] Best Time To Buy And Sell Stock Ii
 - [Complete Notes](Notes/122-best-time-to-buy-and-sell-stock-ii_Notes.md) | [Short Notes](Notes/Short_Notes/122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md)
 
+### [123] Best Time To Buy And Sell Stock Iii
+- [Complete Notes](Notes/123-best-time-to-buy-and-sell-stock-iii_Notes.md) | [Short Notes](Notes/Short_Notes/123-best-time-to-buy-and-sell-stock-iii_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/123-best-time-to-buy-and-sell-stock-iii_Atomic_Notes.md)
+
 ### [130] Surrounded Regions
 - [Complete Notes](Notes/130-surrounded-regions_Notes.md) | [Short Notes](Notes/Short_Notes/130-surrounded-regions_Short_Notes.md) | [Atomic Notes](Notes/Atomic_Notes/130-surrounded-regions_Atomic_Notes.md)
 
@@ -153,6 +156,7 @@
 │   │   ├── 1160-letter-tile-possibilities_Atomic_Notes.md (6.9 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Atomic_Notes.md (6.05 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Atomic_Notes.md (7.62 KB) [.md]
+│   │   ├── 123-best-time-to-buy-and-sell-stock-iii_Atomic_Notes.md (6.09 KB) [.md]
 │   │   ├── 13-roman-to-integer_Atomic_Notes.md (4.4 KB) [.md]
 │   │   ├── 130-surrounded-regions_Atomic_Notes.md (4.45 KB) [.md]
 │   │   ├── 135-candy_Atomic_Notes.md (6.84 KB) [.md]
@@ -201,6 +205,7 @@
 │   │   ├── 1160-letter-tile-possibilities_Short_Notes.md (2.75 KB) [.md]
 │   │   ├── 121-best-time-to-buy-and-sell-stock_Short_Notes.md (2.59 KB) [.md]
 │   │   ├── 122-best-time-to-buy-and-sell-stock-ii_Short_Notes.md (2.83 KB) [.md]
+│   │   ├── 123-best-time-to-buy-and-sell-stock-iii_Short_Notes.md (3.7 KB) [.md]
 │   │   ├── 13-roman-to-integer_Short_Notes.md (3.14 KB) [.md]
 │   │   ├── 130-surrounded-regions_Short_Notes.md (3.8 KB) [.md]
 │   │   ├── 135-candy_Short_Notes.md (3.75 KB) [.md]
@@ -248,6 +253,7 @@
 │   ├── 1160-letter-tile-possibilities_Notes.md (23.52 KB) [.md]
 │   ├── 121-best-time-to-buy-and-sell-stock_Notes.md (17.02 KB) [.md]
 │   ├── 122-best-time-to-buy-and-sell-stock-ii_Notes.md (16.75 KB) [.md]
+│   ├── 123-best-time-to-buy-and-sell-stock-iii_Notes.md (33.84 KB) [.md]
 │   ├── 13-roman-to-integer_Notes.md (27.25 KB) [.md]
 │   ├── 130-surrounded-regions_Notes.md (27.17 KB) [.md]
 │   ├── 135-candy_Notes.md (38.86 KB) [.md]
@@ -311,6 +317,9 @@
 │   ├── 122-best-time-to-buy-and-sell-stock-ii/
 │   │   ├── README.md (1.78 KB) [.md]
 │   │   └── best-time-to-buy-and-sell-stock-ii.py (330 bytes) [.py]
+│   ├── 123-best-time-to-buy-and-sell-stock-iii/
+│   │   ├── README.md (1.78 KB) [.md]
+│   │   └── best-time-to-buy-and-sell-stock-iii.py (3.47 KB) [.py]
 │   ├── 13-roman-to-integer/
 │   │   ├── README.md (2.67 KB) [.md]
 │   │   └── roman-to-integer.py (2.03 KB) [.py]
@@ -438,24 +447,24 @@
 │   └── 88-merge-sorted-array/
 │       ├── README.md (2.52 KB) [.md]
 │       └── merge-sorted-array.py (289 bytes) [.py]
-├── README.md (33.21 KB) [.md]
-├── TREE_FILE.txt (20.47 KB) [.txt]
+├── README.md (33.69 KB) [.md]
+├── TREE_FILE.txt (20.77 KB) [.txt]
 ├── automate_notes.py (11.03 KB) [.py]
 ├── automate_notes_v2.py (16.1 KB) [.py]
-├── file_structure.json (74.96 KB) [.json]
+├── file_structure.json (76.38 KB) [.json]
 ├── filetreegen_v1_2.py (16.99 KB) [.py]
 ├── folder_tree.txt (14.3 KB) [.txt]
 └── readme_generation_automation.py (13.99 KB) [.py]
 
 ==================================================
-Total Files: 247
-Total Size: 1.86 MB
+Total Files: 252
+Total Size: 1.91 MB
 
 Files by Extension:
   .cpp: 14 files
   .json: 1 files
-  .md: 191 files
-  .py: 37 files
+  .md: 195 files
+  .py: 38 files
   .pyc: 2 files
   .txt: 2 files
 ```

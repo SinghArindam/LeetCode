@@ -38,12 +38,12 @@
   {
     "relative_path": ".\\file_structure.json",
     "size": {
-      "bytes": 76762,
-      "kb": 74.96,
+      "bytes": 78212,
+      "kb": 76.38,
       "mb": 0.07,
       "gb": 0.0
     },
-    "modified": "2025-08-11T23:35:16.822195",
+    "modified": "2025-08-20T21:36:25.679478",
     "created": "2025-07-07T20:45:07.157978",
     "extension": ".json"
   },
@@ -62,12 +62,12 @@
   {
     "relative_path": ".\\README.md",
     "size": {
-      "bytes": 34002,
-      "kb": 33.21,
+      "bytes": 34499,
+      "kb": 33.69,
       "mb": 0.03,
       "gb": 0.0
     },
-    "modified": "2025-08-11T23:35:16.852884",
+    "modified": "2025-08-20T21:36:25.707792",
     "created": "2025-07-07T20:45:07.154226",
     "extension": ".md"
   },
@@ -86,12 +86,12 @@
   {
     "relative_path": ".\\TREE_FILE.txt",
     "size": {
-      "bytes": 20961,
-      "kb": 20.47,
+      "bytes": 21270,
+      "kb": 20.77,
       "mb": 0.02,
       "gb": 0.0
     },
-    "modified": "2025-08-11T23:35:16.824198",
+    "modified": "2025-08-20T21:36:25.681482",
     "created": "2025-07-07T20:45:07.154956",
     "extension": ".txt"
   },
@@ -165,6 +165,18 @@
     },
     "modified": "2025-07-10T20:24:17.452735",
     "created": "2025-07-10T20:24:17.452735",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\123-best-time-to-buy-and-sell-stock-iii_Notes.md",
+    "size": {
+      "bytes": 34649,
+      "kb": 33.84,
+      "mb": 0.03,
+      "gb": 0.0
+    },
+    "modified": "2025-08-21T22:00:10.805657",
+    "created": "2025-08-21T22:00:10.805657",
     "extension": ".md"
   },
   {
@@ -732,6 +744,18 @@
     "extension": ".md"
   },
   {
+    "relative_path": "Notes\\Atomic_Notes\\123-best-time-to-buy-and-sell-stock-iii_Atomic_Notes.md",
+    "size": {
+      "bytes": 6232,
+      "kb": 6.09,
+      "mb": 0.01,
+      "gb": 0.0
+    },
+    "modified": "2025-08-21T22:00:39.097865",
+    "created": "2025-08-21T22:00:39.066291",
+    "extension": ".md"
+  },
+  {
     "relative_path": "Notes\\Atomic_Notes\\13-roman-to-integer_Atomic_Notes.md",
     "size": {
       "bytes": 4508,
@@ -1293,6 +1317,18 @@
     },
     "modified": "2025-07-10T20:24:26.151414",
     "created": "2025-07-10T20:24:26.151414",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "Notes\\Short_Notes\\123-best-time-to-buy-and-sell-stock-iii_Short_Notes.md",
+    "size": {
+      "bytes": 3790,
+      "kb": 3.7,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-21T22:00:21.518674",
+    "created": "2025-08-21T22:00:21.479942",
     "extension": ".md"
   },
   {
@@ -1929,6 +1965,30 @@
     },
     "modified": "2025-07-10T20:19:13.404142",
     "created": "2025-07-10T20:19:13.404142",
+    "extension": ".md"
+  },
+  {
+    "relative_path": "submissions\\123-best-time-to-buy-and-sell-stock-iii\\best-time-to-buy-and-sell-stock-iii.py",
+    "size": {
+      "bytes": 3556,
+      "kb": 3.47,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-21T21:58:20.324054",
+    "created": "2025-08-21T21:58:20.324054",
+    "extension": ".py"
+  },
+  {
+    "relative_path": "submissions\\123-best-time-to-buy-and-sell-stock-iii\\README.md",
+    "size": {
+      "bytes": 1820,
+      "kb": 1.78,
+      "mb": 0.0,
+      "gb": 0.0
+    },
+    "modified": "2025-08-21T21:58:20.324054",
+    "created": "2025-08-21T21:58:20.324054",
     "extension": ".md"
   },
   {
