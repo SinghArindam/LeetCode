@@ -51,6 +51,17 @@ class Solution:
         return find_max_profit(0, 2, False)
 
         # Approach 4
+        num_days = len(prices)
+        if num_days < 2:
+            return 0
+        num_transactions = 2
+        profits_table = [[0] * num_days for _ in range(num_transactions + 1)]
+        for k in range(1, num_transactions + 1):
+            max_balance = -prices[0]
+            for day in range(1, num_days):
+                profits_table[k][day] = max(profits_table[k][day - 1], prices[day] + max_balance)
+                max_balance = max(max_balance, profits_table[k - 1][day] - prices[day])
+        return profits_table[num_transactions][-1]
 
         # Approach 5
 
