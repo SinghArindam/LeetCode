@@ -13,25 +13,42 @@ class Solution:
         # return second_sell_profit
 
         # Approach 2
-        num_days = len(prices)
-        if num_days < 2:
-            return 0
-        left_profits = [0] * num_days
-        min_price = prices[0]
-        for day in range(1, num_days):
-            min_price = min(min_price, prices[day])
-            left_profits[day] = max(left_profits[day - 1], prices[day] - min_price)
-        right_profits = [0] * num_days
-        max_price = prices[-1]
-        for day in range(num_days - 2, -1, -1):
-            max_price = max(max_price, prices[day])
-            right_profits[day] = max(right_profits[day + 1], max_price - prices[day])
-        total_max_profit = 0
-        for day in range(num_days):
-            total_max_profit = max(total_max_profit, left_profits[day] + right_profits[day])
-        return total_max_profit
+        # num_days = len(prices)
+        # if num_days < 2:
+        #     return 0
+        # left_profits = [0] * num_days
+        # min_price = prices[0]
+        # for day in range(1, num_days):
+        #     min_price = min(min_price, prices[day])
+        #     left_profits[day] = max(left_profits[day - 1], prices[day] - min_price)
+        # right_profits = [0] * num_days
+        # max_price = prices[-1]
+        # for day in range(num_days - 2, -1, -1):
+        #     max_price = max(max_price, prices[day])
+        #     right_profits[day] = max(right_profits[day + 1], max_price - prices[day])
+        # total_max_profit = 0
+        # for day in range(num_days):
+        #     total_max_profit = max(total_max_profit, left_profits[day] + right_profits[day])
+        # return total_max_profit
 
         # Approach 3
+        memo = {}
+        num_days = len(prices)
+        def find_max_profit(day, transactions_left, is_holding):
+            if day == num_days or transactions_left == 0:
+                return 0
+            state = (day, transactions_left, is_holding)
+            if state in memo:
+                return memo[state]
+            idle_profit = find_max_profit(day + 1, transactions_left, is_holding)
+            if is_holding:
+                action_profit = prices[day] + find_max_profit(day + 1, transactions_left - 1, False)
+            else:
+                action_profit = -prices[day] + find_max_profit(day + 1, transactions_left, True)
+            result = max(idle_profit, action_profit)
+            memo[state] = result
+            return result
+        return find_max_profit(0, 2, False)
 
         # Approach 4
 
